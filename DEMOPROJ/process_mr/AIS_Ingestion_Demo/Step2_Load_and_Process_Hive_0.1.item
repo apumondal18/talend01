@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" framework="Spark" jobType="Big_Data_Batch" xmi:id="_sc2zYIHmEemxW6oSjnenpQ" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_sc2zYYHmEemxW6oSjnenpQ"/>
+  <parameters xmi:id="_sc2zYoHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_sc2zY4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_sc2zZIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_sc2zZYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_sc2zZoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_sc2zZ4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_sc2zaIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_sc2zaYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_sc2zaoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_sc2za4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_sc2zbIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_sc2zbYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_sc2zboHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_sc2zb4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_sc2zcIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_sc2zcYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_sc2zcoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_sc2zc4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_sc2zdIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_sc2zdYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" xmi:id="_sc2zdoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" xmi:id="_sc2zd4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" xmi:id="_sc2zeIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_sc2zeYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_sc2zeoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;" xmi:id="_sc2ze4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;" xmi:id="_sc2zfIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_sc2zfYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_sc2zfoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zf4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false" xmi:id="_sc2zgIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zgYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zgoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zg4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zhIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zhYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zhoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zh4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2ziIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE=" xmi:id="_sc2ziYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zioHmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zi4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_sc2zjIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning" xmi:id="_sc2zjYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning" xmi:id="_sc2zjoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false" xmi:id="_sc2zj4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false" xmi:id="_sc2zkIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false" xmi:id="_sc2zkYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false" xmi:id="_sc2zkoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false" xmi:id="_sc2zk4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false" xmi:id="_sc2zlIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false" xmi:id="_sc2zlYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false" xmi:id="_sc2zloHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false" xmi:id="_sc2zl4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/workspace/.metadata&quot;" xmi:id="_sc2zmIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;" xmi:id="_sc2zmYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;" xmi:id="_sc2zmoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;" xmi:id="_sc2zm4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15" xmi:id="_sc2znIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_sc2znYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false" xmi:id="_sc2znoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput" xmi:id="_sc2zn4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12" xmi:id="_sc2zoIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;" xmi:id="_sc2zoYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false" xmi:id="_sc2zooHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;" xmi:id="_sc2zo4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;" xmi:id="_sc2zpIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;" xmi:id="_sc2zpYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;" xmi:id="_sc2zpoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;" xmi:id="_sc2zp4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_sc2zqIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;" xmi:id="_sc2zqYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;" xmi:id="_sc2zqoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;" xmi:id="_sc2zq4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE=" xmi:id="_sc2zrIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;" xmi:id="_sc2zrYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;" xmi:id="_sc2zroHmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;" xmi:id="_sc2zr4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;" xmi:id="_sc2zsIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true" xmi:id="_sc2zsYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true" xmi:id="_sc2zsoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true" xmi:id="_sc2zs4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false" xmi:id="_sc2ztIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value="" xmi:id="_sc2ztYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false" xmi:id="_sc2ztoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value="" xmi:id="_sc2zt4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value="" xmi:id="_sc2zuIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value="" xmi:id="_sc2zuYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value="" xmi:id="_sc2zuoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false" xmi:id="_sc2zu4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value="" xmi:id="_sc2zvIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value="" xmi:id="_sc2zvYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value="" xmi:id="_sc2zvoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SPARK_LOCAL_MODE" value="false" xmi:id="_sc2zv4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" show="false" value="SPARK_2_0_0" xmi:id="_sc2zwIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="MR_PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_sc2zwYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="MR_PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_-5YycIEdEem1p9x_sWwddg" xmi:id="_sc2zwoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA" xmi:id="_sc2zw4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_VERSION" value="Cloudera_CDH5_12" xmi:id="_sc2zxIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_2_2_0" xmi:id="_sc2zxYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value="" xmi:id="_sc2zxoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value="" xmi:id="_sc2zx4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="** The version of Spark must be 1.3.0 or later." xmi:id="_sc2zyIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_API_VERSION" show="false" value="SPARK_200" xmi:id="_sc2zyYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_HDP_VERSION" show="false" value="false" xmi:id="_sc2zyoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HDP_VERSION" show="false" value="&quot;x.x.x.x-x&quot;" xmi:id="_sc2zy4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLIENT" xmi:id="_sc2zzIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;ip-172-30-0-40.us-west-2.compute.internal:8032&quot;" xmi:id="_sc2zzYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true" xmi:id="_sc2zzoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;ip-172-30-0-40.us-west-2.compute.internal:8030&quot;" xmi:id="_sc2zz4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true" xmi:id="_sc2z0IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;ip-172-30-0-40.us-west-2.compute.internal:10020&quot;" xmi:id="_sc2z0YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_STAGING_DIRECTORY" value="true" xmi:id="_sc2z0oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="STAGING_DIRECTORY" value="&quot;/user&quot;" xmi:id="_sc2z04HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_ENDPOINT" show="false" value="&quot;https://xxxx.azurehdinsight.net&quot;" xmi:id="_sc2z1IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_sc2z1YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_sc2z1oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LIVY_HOST" show="false" value="&quot;&quot;" xmi:id="_sc2z14HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LIVY_PORT" show="false" value="&quot;443&quot;" xmi:id="_sc2z2IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LIVY_USERNAME" show="false" value="&quot;&quot;" xmi:id="_sc2z2YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_sc2z2oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_sc2z24HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="WASB_HOST" show="false" value="&quot;&quot;" xmi:id="_sc2z3IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" show="false" value="&quot;&quot;" xmi:id="_sc2z3YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" show="false" value="&quot;&quot;" xmi:id="_sc2z3oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_sc2z34HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" show="false" value="&quot;&quot;" xmi:id="_sc2z4IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_HOST" show="false" value="&quot;spark://localhost:7077&quot;" xmi:id="_sc2z4YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_HOME" show="false" value="&quot;/usr/lib/spark&quot;" xmi:id="_sc2z4oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false" xmi:id="_sc2z44HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HADOOP_HOME_DIR" show="false" value="&quot;C:/Talend/winutils&quot;" xmi:id="_sc2z5IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" value="false" xmi:id="_sc2z5YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_HOST" show="false" value="&quot;127.0.0.1&quot;" xmi:id="_sc2z5oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" show="false" value="&quot;my-google-project&quot;" xmi:id="_sc2z54HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" show="false" value="&quot;my-cluster-id&quot;" xmi:id="_sc2z6IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" show="false" value="&quot;global&quot;" xmi:id="_sc2z6YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" show="false" value="&quot;gs://my-bucket/talend/jars&quot;" xmi:id="_sc2z6oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" show="false" value="false" xmi:id="_sc2z64HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;&quot;" xmi:id="_sc2z7IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ALTUS_SET_CREDENTIALS" show="false" value="false" xmi:id="_sc2z7YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_sc2z7oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="ALTUS_SECRET_KEY" show="false" value="&quot;&quot;" xmi:id="_sc2z74HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_CLI_PATH" show="false" value="&quot;/opt/altuscli/altusclienv/bin/altus&quot;" xmi:id="_sc2z8IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ALTUS_REUSE_CLUSTER" show="false" value="false" xmi:id="_sc2z8YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_CLUSTER_NAME" show="false" value="&quot;talend-altus-cluster&quot;" xmi:id="_sc2z8oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="ALTUS_CLOUD_PROVIDER" show="false" value="&quot;AWS&quot;" xmi:id="_sc2z84HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_ENVIRONMENT_NAME" show="false" value="&quot;talend-altus-cluster&quot;" xmi:id="_sc2z9IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ALTUS_DELETE_AFTER_EXECUTION" show="false" value="false" xmi:id="_sc2z9YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_S3_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_sc2z9oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="ALTUS_S3_SECRET_KEY" show="false" value="0RMsyjmybrE=" xmi:id="_sc2z94HmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_S3_REGION" show="false" value="&quot;us-east-1&quot;" xmi:id="_sc2z-IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_BUCKET_NAME" show="false" value="&quot;my-bucket&quot;" xmi:id="_sc2z-YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_JARS_BUCKET" show="false" value="&quot;talend/jars/&quot;" xmi:id="_sc2z-oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_AZURE_ADLS_ACCOUNT_FQDN" show="false" value="&quot;xxxx.azuredatalakestore.net&quot;" xmi:id="_sc2z-4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_AZURE_APP_ID" show="false" value="&quot;&quot;" xmi:id="_sc2z_IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="ALTUS_AZURE_TOKEN_ENDPOINT" show="false" value="0RMsyjmybrE=" xmi:id="_sc2z_YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="ALTUS_AZURE_APP_KEY" show="false" value="0RMsyjmybrE=" xmi:id="_sc2z_oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ALTUS_USE_CUSTOM_JSON" show="false" value="false" xmi:id="_sc2z_4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="MEMO" name="ALTUS_CUSTOM_JSON" show="false" value="{}" xmi:id="_sc20AIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_INSTANCE_TYPE" show="false" value="&quot;c4.2xlarge&quot;" xmi:id="_sc20AYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_AZURE_INSTANCE_TYPE" show="false" value="&quot;STANDARD_DS12_V2&quot;" xmi:id="_sc20AoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_WORKER_NODE" show="false" value="&quot;10&quot;" xmi:id="_sc20A4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="ALTUS_SSH_KEY" show="false" value="" xmi:id="_sc20BIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="ALTUS_CUSTOM_BOOTSTRAP_SCRIPT" show="false" value="" xmi:id="_sc20BYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ALTUS_CLOUDERA_MANAGER_USERNAME" show="false" value="&quot;altus&quot;" xmi:id="_sc20BoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="ALTUS_CLOUDERA_MANAGER_PASSWORD" show="false" value="" xmi:id="_sc20B4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true" xmi:id="_sc20CIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@PRESALES.TALEND.US&quot;" xmi:id="_sc20CYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@PRESALES.TALEND.US&quot;" xmi:id="_sc20CoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="true" xmi:id="_sc20C4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;skotnala&quot;" xmi:id="_sc20DIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/home/skotnala/skotnala.keytab&quot;" xmi:id="_sc20DYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;aepseraccnt1&quot;" xmi:id="_sc20DoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false" xmi:id="_sc20D4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_sc20EIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;" xmi:id="_sc20EYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="" xmi:id="_sc20EoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false" xmi:id="_sc20E4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;" xmi:id="_sc20FIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false" xmi:id="_sc20FYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;" xmi:id="_sc20FoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" show="false" value="0RMsyjmybrE=" xmi:id="_sc20F4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" show="false" value="false" xmi:id="_sc20GIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" show="false" value="&quot;&quot;" xmi:id="_sc20GYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" show="false" value="false" xmi:id="_sc20GoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" show="false" value="&quot;https://api.qubole.com/api&quot;" xmi:id="_sc20G4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="QUBOLE_S3_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_sc20HIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_S3_SECRET_KEY" show="false" value="0RMsyjmybrE=" xmi:id="_sc20HYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="QUBOLE_S3_BUCKET_NAME" show="false" value="&quot;&quot;" xmi:id="_sc20HoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="QUBOLE_S3_BUCKET_KEY" show="false" value="&quot;&quot;" xmi:id="_sc20H4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_S3_REGION" show="false" value="com.amazonaws.regions.Regions.DEFAULT_REGION.getName()" xmi:id="_sc20IIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false" xmi:id="_sc20IYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_MEM" show="false" value="&quot;512m&quot;" xmi:id="_sc20IoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_CORES" show="false" value="&quot;1&quot;" xmi:id="_sc20I4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SPARK_YARN_AM_SETTINGS_CHECK" show="false" value="false" xmi:id="_sc20JIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_MEM" show="false" value="&quot;512m&quot;" xmi:id="_sc20JYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_CORES" show="false" value="&quot;1&quot;" xmi:id="_sc20JoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM" show="false" value="&quot;512m&quot;" xmi:id="_sc20J4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="false" xmi:id="_sc20KIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="&quot;384&quot;" xmi:id="_sc20KYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" show="false" value="false" xmi:id="_sc20KoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_CORES" show="false" value="&quot;1&quot;" xmi:id="_sc20K4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" show="false" value="AUTO" xmi:id="_sc20LIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_INSTANCES" show="false" value="&quot;2&quot;" xmi:id="_sc20LYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_INIT" show="false" value="&quot;1&quot;" xmi:id="_sc20LoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MIN" show="false" value="&quot;0&quot;" xmi:id="_sc20L4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MAX" show="false" value="&quot;MAX&quot;" xmi:id="_sc20MIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="WEB_UI_PORT_CHECK" show="false" value="false" xmi:id="_sc20MYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="WEB_UI_PORT" show="false" value="&quot;4040&quot;" xmi:id="_sc20MoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" show="false" value="AUTO" xmi:id="_sc20M4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" show="false" value="false" xmi:id="_sc20NIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_SERIALIZER" show="false" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" xmi:id="_sc20NYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_STATS_POLLING_RATE" show="false" value="&quot;50&quot;" xmi:id="_sc20NoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="false" xmi:id="_sc20N4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" show="false" value="false" xmi:id="_sc20OIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_EVENT_LOG_DIR" show="false" value="&quot;hdfs://namenode:8020/user/spark/applicationHistory&quot;&#10;&#9;&#9;&#9;" xmi:id="_sc20OYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARKHISTORY_ADDRESS" show="false" value="&quot;sparkHistoryServer:18080&quot;" xmi:id="_sc20OoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/tmp&quot;" xmi:id="_sc20O4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="WAIT_FOR_THE_JOB_TO_COMPLETE" show="false" value="true" xmi:id="_sc20PIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_CHECKPOINT" value="false" xmi:id="_sc20PYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CHECKPOINT_DIR" show="false" value="&quot;file:///tmp/mycheckpoint&quot;" xmi:id="_sc20PoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="SPARK_ADVANCED_PROPERTIES" xmi:id="_sc20P4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_CLOUDERA_NAVIGATOR" value="false" xmi:id="_sc20QIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" show="false" value="&quot;username&quot;" xmi:id="_sc20QYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_sc20QoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_URL" show="false" value="&quot;http://localhost:7187/api/v8/&quot;" xmi:id="_sc20Q4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" show="false" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" xmi:id="_sc20RIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" show="false" value="&quot;http://localhost&quot;" xmi:id="_sc20RYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" show="false" value="false" xmi:id="_sc20RoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" show="false" value="false" xmi:id="_sc20R4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" show="false" value="false" xmi:id="_sc20SIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_ATLAS" show="false" value="false" xmi:id="_sc20SYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ATLAS_URL" show="false" value="&quot;http://localhost:21000&quot;" xmi:id="_sc20SoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ATLAS_USERNAME" show="false" value="&quot;admin&quot;" xmi:id="_sc20S4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="ATLAS_PASSWORD" show="false" value="0RMsyjmybrE=" xmi:id="_sc20TIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" show="false" value="false" xmi:id="_sc20TYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" show="false" value="&quot;/user/atlas/atlas-application.properties&quot;" xmi:id="_sc20ToHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ATLAS_DIE_ON_ERROR" show="false" value="false" xmi:id="_sc20T4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_ENDPOINT" show="false" value="&quot;https://westeurope.azuredatabricks.net&quot;" xmi:id="_sc20UIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_CLUSTER_ID" show="false" value="&quot;&quot;" xmi:id="_sc20UYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="PASSWORD" name="DATABRICKS_TOKEN" show="false" value="0RMsyjmybrE=" xmi:id="_sc20UoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DATABRICKS_DBFS_DEP_FOLDER" show="false" value="&quot;&quot;" xmi:id="_sc20U4HmEemxW6oSjnenpQ"/>
+    <routinesParameter id="_HWZZkHn3EeiYv57YYXk2zw" name="DQTechnical" xmi:id="_7U9xroEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HVD80Hn3EeiYv57YYXk2zw" name="DataMasking" xmi:id="_7U9xr4EaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HMNi0Hn3EeiYv57YYXk2zw" name="DataOperation" xmi:id="_7U9xsIEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HV8toHn3EeiYv57YYXk2zw" name="DataQualityDependencies" xmi:id="_7U9xsYEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HVpysHn3EeiYv57YYXk2zw" name="DataQuality" xmi:id="_7U9xsoEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HWQPoHn3EeiYv57YYXk2zw" name="DqStringHandling" xmi:id="_7U9xs4EaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HS-SIHn3EeiYv57YYXk2zw" name="Mathematical" xmi:id="_7U9xtIEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HTRNEHn3EeiYv57YYXk2zw" name="Numeric" xmi:id="_7U9xtYEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HTa-EXn3EeiYv57YYXk2zw" name="Relational" xmi:id="_7U9xtoEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HUwa0Hn3EeiYv57YYXk2zw" name="SQLike" xmi:id="_7U9xt4EaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HTkIBnn3EeiYv57YYXk2zw" name="StringHandling" xmi:id="_7U9xuIEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HT3qBnn3EeiYv57YYXk2zw" name="TalendDataGenerator" xmi:id="_7U9xuYEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HUKk8Hn3EeiYv57YYXk2zw" name="TalendDate" xmi:id="_7U9xuoEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HUnQ4Hn3EeiYv57YYXk2zw" name="TalendStringUtil" xmi:id="_7U9xu4EaEem1p9x_sWwddg"/>
+    <routinesParameter id="_HUTu5Xn3EeiYv57YYXk2zw" name="TalendString" xmi:id="_7U9xvIEaEem1p9x_sWwddg"/>
+    <routinesParameter id="_-0DlgIEoEemxW6oSjnenpQ" name="MDM" xmi:id="_lXad5IExEemxW6oSjnenpQ"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192" xmi:id="_sc20VIHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3" xmi:id="_sc20VYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true" xmi:id="_sc20VoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc20V4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELD" show="false" value="line" xmi:id="_sc20WIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/skotnala/cdrs/inbound/voice_sample_data.csv&quot;" xmi:id="_sc20WYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" xmi:id="_sc20WoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" xmi:id="_sc20W4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;" xmi:id="_sc20XIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;" xmi:id="_sc20XYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;" xmi:id="_sc20XoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;" xmi:id="_sc20X4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false" xmi:id="_sc20YIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADER" value="1" xmi:id="_sc20YYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false" xmi:id="_sc20YoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_MIN_PARTITIONS" value="false" xmi:id="_sc20Y4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="MIN_PARTITIONS" show="false" value="2" xmi:id="_sc20ZIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_sc20ZYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;" xmi:id="_sc20ZoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8" xmi:id="_sc20Z4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" xmi:id="_sc20aIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;" xmi:id="_sc20aYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;" xmi:id="_sc20aoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false" xmi:id="_sc20a4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" xmi:id="_sc20bIHmEemxW6oSjnenpQ">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALNO" xmi:id="_sc20bYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20boHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME_STAMP" xmi:id="_sc20b4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20cIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLINGPARTYNUMBER" xmi:id="_sc20cYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20coHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLEDPARTYNUMBER" xmi:id="_sc20c4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20dIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICEFLOW" xmi:id="_sc20dYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20doHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLDURATION" xmi:id="_sc20d4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20eIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TERMINATIONREASON" xmi:id="_sc20eYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20eoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGEDURATION" xmi:id="_sc20e4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20fIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCESSPREFIX" xmi:id="_sc20fYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20foHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBCOSID" xmi:id="_sc20f4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20gIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLTYPE" xmi:id="_sc20gYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20goHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROAMSTATE" xmi:id="_sc20g4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20hIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLINGROAMCOUNTRYCODE" xmi:id="_sc20hYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20hoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLEDHOMECOUNTRYCODE" xmi:id="_sc20h4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20iIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONNETINDICATOR" xmi:id="_sc20iYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20ioHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USAGESERVICETYPE" xmi:id="_sc20i4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20jIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGEFROMPREPAID" xmi:id="_sc20jYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20joHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREPAIDBALANCE" xmi:id="_sc20j4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc20kIHmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false" xmi:id="_sc20kYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false" xmi:id="_sc20koHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false" xmi:id="_sc20k4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false" xmi:id="_sc20lIHmEemxW6oSjnenpQ">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALNO" xmi:id="_sc20lYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20loHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME_STAMP" xmi:id="_sc20l4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20mIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLINGPARTYNUMBER" xmi:id="_sc20mYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20moHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLEDPARTYNUMBER" xmi:id="_sc20m4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20nIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICEFLOW" xmi:id="_sc20nYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20noHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLDURATION" xmi:id="_sc20n4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20oIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TERMINATIONREASON" xmi:id="_sc20oYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20ooHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGEDURATION" xmi:id="_sc20o4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20pIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCESSPREFIX" xmi:id="_sc20pYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20poHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBCOSID" xmi:id="_sc20p4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20qIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLTYPE" xmi:id="_sc20qYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20qoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROAMSTATE" xmi:id="_sc20q4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20rIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLINGROAMCOUNTRYCODE" xmi:id="_sc20rYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20roHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALLEDHOMECOUNTRYCODE" xmi:id="_sc20r4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20sIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONNETINDICATOR" xmi:id="_sc20sYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20soHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USAGESERVICETYPE" xmi:id="_sc20s4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20tIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHARGEFROMPREPAID" xmi:id="_sc20tYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20toHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREPAIDBALANCE" xmi:id="_sc20t4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc20uIHmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="voice cdr data" xmi:id="_sc20uYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc20uoHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_3" xmi:id="_sc20u4HmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20vIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20vYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20voHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20v4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SERVICEFLOW" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20wIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20wYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20woHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20w4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20xIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20xYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20xoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20x4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGROAMCOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20yIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDHOMECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20yYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20yoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20y4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20zIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20zYHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT" xmi:id="_sc20zoHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20z4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc200IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc200YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc200oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SERVICEFLOW" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc2004HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc201IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc201YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc201oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc2014HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc202IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc202YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc202oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGROAMCOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc2024HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDHOMECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc203IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc203YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc203oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc2034HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc204IHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc204YHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc204oHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="inputLine" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc2044HmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="INTERMEDIATE" name="INTERMEDIATE" xmi:id="_sc205IHmEemxW6oSjnenpQ">
+      <column defaultValue="" key="false" length="255" name="line" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc205YHmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192" xmi:id="_sc205oHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2" xmi:id="_sc2054HmEemxW6oSjnenpQ"/>
+    <elementParameter field="EXTERNAL" name="MAP" value="" xmi:id="_sc206IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO" xmi:id="_sc206YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REPLICATED_JOIN" value="false" xmi:id="_sc206oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wr0Z8H66EemtAt9Gy4b2zA-tMap_2-PREVIEW.bmp" xmi:id="_sc2064HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false" xmi:id="_sc207IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0" xmi:id="_sc207YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0" xmi:id="_sc207oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="PII Masking" xmi:id="_sc2074HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc208IHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" label="original" name="masked" xmi:id="_sc208YHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc208oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc2084HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc209IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc209YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SERVICEFLOW" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc209oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc2094HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20-IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20-YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20-oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20-4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20_IHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc20_YHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGROAMCOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20_oHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDHOMECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc20_4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21AIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21AYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21AoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21A4HmEemxW6oSjnenpQ"/>
+    </metadata>
+    <nodeData xmi:id="_sc21BIHmEemxW6oSjnenpQ" xsi:type="TalendMapper:MapperData">
+      <uiProperties xmi:id="_sc21BYHmEemxW6oSjnenpQ"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE" xmi:id="_sc21BoHmEemxW6oSjnenpQ"/>
+      <outputTables name="masked" sizeState="INTERMEDIATE" xmi:id="_sc21B4HmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="raw_data.SERIALNO " name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc21CIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.TIME_STAMP " name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc21CYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="DataMasking.createMD5(raw_data.CALLINGPARTYNUMBER) " name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21CoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="DataMasking.createMD5(raw_data.CALLEDPARTYNUMBER) " name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21C4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.SERVICEFLOW " name="SERVICEFLOW" nullable="true" type="id_String" xmi:id="_sc21DIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.CALLDURATION " name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc21DYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.TERMINATIONREASON " name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc21DoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.CHARGEDURATION " name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc21D4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.ACCESSPREFIX " name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc21EIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.SUBCOSID " name="SUBCOSID" nullable="true" type="id_String" xmi:id="_sc21EYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.CALLTYPE " name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc21EoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.ROAMSTATE " name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc21E4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.CALLINGROAMCOUNTRYCODE " name="CALLINGROAMCOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc21FIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.CALLEDHOMECOUNTRYCODE " name="CALLEDHOMECOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc21FYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.ONNETINDICATOR " name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc21FoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.USAGESERVICETYPE " name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc21F4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.CHARGEFROMPREPAID " name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc21GIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_data.PREPAIDBALANCE " name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc21GYHmEemxW6oSjnenpQ"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="raw_data" sizeState="INTERMEDIATE" xmi:id="_sc21GoHmEemxW6oSjnenpQ">
+        <mapperTableEntries name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc21G4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc21HIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21HYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21HoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="SERVICEFLOW" nullable="true" type="id_String" xmi:id="_sc21H4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc21IIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc21IYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc21IoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc21I4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="SUBCOSID" nullable="true" type="id_String" xmi:id="_sc21JIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc21JYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc21JoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGROAMCOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc21J4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDHOMECOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc21KIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc21KYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc21KoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc21K4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc21LIHmEemxW6oSjnenpQ"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHiveOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192" xmi:id="_sc21LYHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveOutput_2" xmi:id="_sc21LoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2" xmi:id="_sc21L4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc21MIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_SOURCE" value="HIVE_TABLE" xmi:id="_sc21MYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;default&quot;" xmi:id="_sc21MoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;voice_raw_table&quot;" xmi:id="_sc21M4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="RETRIEVE_HIVE_TABLE_SCHEMA" value="false" xmi:id="_sc21NIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="LABEL" name="HIVE_TABLE_SCHEMA_NOTE" show="false" value="NOTE: Table will be stored as hive's default format if not exist&#10;&#9;&#9;&#9;" xmi:id="_sc21NYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEFORMAT" value="parquet" xmi:id="_sc21NoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OUTPUT_FOLDER" show="false" value="&quot;&quot;" xmi:id="_sc21N4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SAVEMODE" value="Overwrite" xmi:id="_sc21OIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="HIVE_PARTITIONS_ENABLED" value="false" xmi:id="_sc21OYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="HIVE_PARTITIONS_KEYS" show="false" xmi:id="_sc21OoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Hive" xmi:id="_sc21O4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_sc21PIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SORT_COLUMNS_ALPHABETICALLY" value="false" xmi:id="_sc21PYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DATE_TO_TIMESTAMP_DF_TYPE_SUBSTITUTION" value="true" xmi:id="_sc21PoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="voice cdr staging table (Parquet)" xmi:id="_sc21P4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc21QIHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" label="original" name="tHiveOutput_2" xmi:id="_sc21QYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21QoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21Q4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21RIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21RYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SERVICEFLOW" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21RoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21R4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21SIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21SYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21SoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21S4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21TIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21TYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGROAMCOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21ToHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDHOMECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21T4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21UIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21UYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21UoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21U4HmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192" xmi:id="_sc21VIHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tReplicate_2" xmi:id="_sc21VYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CACHEOUTPUT" value="true" xmi:id="_sc21VoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="STORAGELEVEL" value="MEMORY_ONLY" xmi:id="_sc21V4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="COMPRESSRDD" show="false" value="false" xmi:id="_sc21WIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSCODEC" show="false" value="org.apache.spark.io.SnappyCompressionCodec" xmi:id="_sc21WYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TACHYON_STORE_URL" show="false" value="&quot;tachyon://localhost:19998&quot;" xmi:id="_sc21WoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TACHYON_STORE_BASEDIR" show="false" value="&quot;/tmp/&quot;" xmi:id="_sc21W4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc21XIHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tReplicate_2" xmi:id="_sc21XYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21XoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21X4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21YIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21YYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SERVICEFLOW" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21YoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21Y4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21ZIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21ZYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21ZoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21Z4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21aIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21aYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGROAMCOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21aoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDHOMECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21a4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21bIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21bYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21boHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21b4HmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="SPARKCOMBINE" name="SPARKCOMBINE" xmi:id="_sc21cIHmEemxW6oSjnenpQ"/>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288" xmi:id="_sc21cYHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4" xmi:id="_sc21coHmEemxW6oSjnenpQ"/>
+    <elementParameter field="EXTERNAL" name="MAP" value="" xmi:id="_sc21c4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO" xmi:id="_sc21dIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REPLICATED_JOIN" value="false" xmi:id="_sc21dYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wr0Z8H66EemtAt9Gy4b2zA-tMap_4-PREVIEW.bmp" xmi:id="_sc21doHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false" xmi:id="_sc21d4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0" xmi:id="_sc21eIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0" xmi:id="_sc21eYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="transformation" xmi:id="_sc21eoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc21e4HmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="filtered_voice_data" xmi:id="_sc21fIHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21fYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21foHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21f4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21gIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21gYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21goHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21g4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_sc21hIHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <nodeData xmi:id="_sc21hYHmEemxW6oSjnenpQ" xsi:type="TalendMapper:MapperData">
+      <uiProperties xmi:id="_sc21hoHmEemxW6oSjnenpQ"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE" xmi:id="_sc21h4HmEemxW6oSjnenpQ"/>
+      <outputTables name="filtered_voice_data" sizeState="INTERMEDIATE" xmi:id="_sc21iIHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="voice_cdr.SERIALNO " name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc21iYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.TIME_STAMP " name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc21ioHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.CALLINGPARTYNUMBER " name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21i4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.CALLEDPARTYNUMBER " name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21jIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.SUBCOSID " name="SUBCOSID" nullable="true" type="id_String" xmi:id="_sc21jYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.CALLTYPE " name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc21joHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.CHARGEFROMPREPAID " name="CHARGEFROMPREPAID" nullable="true" type="id_Integer" xmi:id="_sc21j4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="voice_cdr.PREPAIDBALANCE " name="PREPAIDBALANCE" nullable="true" type="id_Double" xmi:id="_sc21kIHmEemxW6oSjnenpQ"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="voice_cdr" sizeState="INTERMEDIATE" xmi:id="_sc21kYHmEemxW6oSjnenpQ">
+        <mapperTableEntries name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc21koHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc21k4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21lIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc21lYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="SERVICEFLOW" nullable="true" type="id_String" xmi:id="_sc21loHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc21l4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc21mIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc21mYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc21moHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="SUBCOSID" nullable="true" type="id_String" xmi:id="_sc21m4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc21nIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc21nYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGROAMCOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc21noHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDHOMECOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc21n4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc21oIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc21oYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc21ooHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc21o4HmEemxW6oSjnenpQ"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288" xmi:id="_sc21pIHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1" xmi:id="_sc21pYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true" xmi:id="_sc21poHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc21p4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="FOLDER" value="&quot;/user/skotnala/cdrs/prepaid/voice_prepaid_data.csv&quot;" xmi:id="_sc21qIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE" xmi:id="_sc21qYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" xmi:id="_sc21qoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true" xmi:id="_sc21q4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;" xmi:id="_sc21rIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;" xmi:id="_sc21rYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true" xmi:id="_sc21roHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_sc21r4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;" xmi:id="_sc21sIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_sc21sYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" xmi:id="_sc21soHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" show="false" value="GZIP" xmi:id="_sc21s4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="MERGE_RESULT" value="false" xmi:id="_sc21tIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE_HADOOP" name="MERGE_PATH" show="false" value="&quot;&quot;" xmi:id="_sc21tYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" show="false" value="false" xmi:id="_sc21toHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" show="false" value="true" xmi:id="_sc21t4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" xmi:id="_sc21uIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;" xmi:id="_sc21uYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;" xmi:id="_sc21uoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false" xmi:id="_sc21u4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;" xmi:id="_sc21vIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;" xmi:id="_sc21vYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="LOCAL_TIMEZONE_DATE_FORMAT" value="false" xmi:id="_sc21voHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="voice prepaid data" xmi:id="_sc21v4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc21wIHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1" xmi:id="_sc21wYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21woHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21w4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21xIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21xYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc21xoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21x4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc21yIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_sc21yYHmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <node componentName="tHDFSConfiguration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64" xmi:id="_sc21yoHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConfiguration_2" xmi:id="_sc21y4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_sc21zIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_-5YycIEdEem1p9x_sWwddg" xmi:id="_sc21zYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA" xmi:id="_sc21zoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_12" xmi:id="_sc21z4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value="" xmi:id="_sc210IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value="" xmi:id="_sc210YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ip-172-30-0-40.us-west-2.compute.internal:8020&quot;" xmi:id="_sc210oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true" xmi:id="_sc2104HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@PRESALES.TALEND.US&quot;" xmi:id="_sc211IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="true" xmi:id="_sc211YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;skotnala&quot;" xmi:id="_sc211oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/home/skotnala/skotnala.keytab&quot;" xmi:id="_sc2114HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;" xmi:id="_sc212IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;" xmi:id="_sc212YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" xmi:id="_sc212oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;" xmi:id="_sc2124HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" value="false" xmi:id="_sc213IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" show="false" value="&quot;kms://http@localhost:16000/kms&quot;" xmi:id="_sc213YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" xmi:id="_sc213oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="CDH_Cluster_HDFS" xmi:id="_sc2134HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc214IHmEemxW6oSjnenpQ"/>
+  </node>
+  <node componentName="tHiveConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64" xmi:id="_sc214YHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveConfiguration_2" xmi:id="_sc214oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_sc2144HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_pdzWcIEkEem1p9x_sWwddg" xmi:id="_sc215IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA" xmi:id="_sc215YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_12" xmi:id="_sc215oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVEONSPARK" value="" xmi:id="_sc2154HmEemxW6oSjnenpQ"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value="" xmi:id="_sc216IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ENABLE_HIVE_HA" value="false" xmi:id="_sc216YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" xmi:id="_sc216oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9083&quot;" xmi:id="_sc2164HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HIVE_METASTORE_URIS" show="false" value="&quot;&quot;" xmi:id="_sc217IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" xmi:id="_sc217YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" show="false" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" xmi:id="_sc217oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false" xmi:id="_sc2174HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_sc218IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="Hive_Database_LDAP" xmi:id="_sc218YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc218oHmEemxW6oSjnenpQ"/>
+  </node>
+  <node componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416" xmi:id="_sc2184HmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveInput_1" xmi:id="_sc219IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2" xmi:id="_sc219YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc219oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE" xmi:id="_sc2194HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;default&quot;" xmi:id="_sc21-IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;voice_raw_table&quot;" xmi:id="_sc21-YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="MEMO" name="SQL_QUERY" show="false" value="&quot;select id, name from table&quot;" xmi:id="_sc21-oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FILENAME" show="false" value="&quot;&quot;" xmi:id="_sc21-4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Hive" xmi:id="_sc21_IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="REGISTER_JARS" xmi:id="_sc21_YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="TEMP_UDF_FUNCTIONS" xmi:id="_sc21_oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_sc21_4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="voice cdr staging table (Parquet)" xmi:id="_sc22AIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc22AYHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tHiveInput_1" xmi:id="_sc22AoHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22A4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22BIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22BYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22BoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SERVICEFLOW" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22B4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22CIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22CYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22CoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22C4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="SUBCOSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22DIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22DYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22DoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGROAMCOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22D4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDHOMECOUNTRYCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22EIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22EYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22EoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22E4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22FIHmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416" xmi:id="_sc22FYHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1" xmi:id="_sc22FoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="EXTERNAL" name="MAP" value="" xmi:id="_sc22F4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO" xmi:id="_sc22GIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REPLICATED_JOIN" value="false" xmi:id="_sc22GYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wr0Z8H66EemtAt9Gy4b2zA-tMap_1-PREVIEW.bmp" xmi:id="_sc22GoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false" xmi:id="_sc22G4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0" xmi:id="_sc22HIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0" xmi:id="_sc22HYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="filter and transformation rules" xmi:id="_sc22HoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc22H4HmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="transformed" xmi:id="_sc22IIHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22IYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22IoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22I4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22JIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CallDirection" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22JYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22JoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22J4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22KIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22KYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PricePlanId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22KoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22K4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22LIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="RoamCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22LYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="HomeCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22LoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22L4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22MIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22MYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22MoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="UsageSubType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22M4HmEemxW6oSjnenpQ"/>
+    </metadata>
+    <nodeData xmi:id="_sc22NIHmEemxW6oSjnenpQ" xsi:type="TalendMapper:MapperData">
+      <uiProperties xmi:id="_sc22NYHmEemxW6oSjnenpQ"/>
+      <varTables name="Var" sizeState="INTERMEDIATE" xmi:id="_sc22NoHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="raw_voice_cdr.SERVICEFLOW.equals(&quot;1&quot;) ? &quot;Outgoing&quot; : &#13;&#10;raw_voice_cdr.SERVICEFLOW.equals(&quot;2&quot;) ? &quot;Incoming&quot; :&#13;&#10;raw_voice_cdr.SERVICEFLOW.equals(&quot;3&quot;) ? &quot;Callforward&quot; : raw_voice_cdr.SERVICEFLOW " name="call_direction" type="id_String" xmi:id="_sc22N4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="!raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) &amp;&amp; (raw_voice_cdr.CALLTYPE == 0 || raw_voice_cdr.CALLTYPE == 1) ? &quot;Local&quot; :&#13;&#10;!raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) &amp;&amp; raw_voice_cdr.CALLTYPE ==3 ? &quot;IDD&quot; : &#13;&#10;raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) ? &quot;Roaming&quot; : null " name="usage_type" type="id_String" xmi:id="_sc22OIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="!raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) &amp;&amp; (raw_voice_cdr.CALLTYPE == 0 || raw_voice_cdr.CALLTYPE == 1) &amp;&amp; raw_voice_cdr.ONNETINDICATOR == 0 ? &quot;ONNET&quot; :&#13;&#10;!raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) &amp;&amp; (raw_voice_cdr.CALLTYPE == 0 || raw_voice_cdr.CALLTYPE == 1) &amp;&amp; raw_voice_cdr.ONNETINDICATOR == 1 ? &quot;OFFNET&quot;:&#13;&#10;!raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) &amp;&amp; raw_voice_cdr.CALLTYPE == 3 &amp;&amp; raw_voice_cdr.ACCESSPREFIX.equals(&quot;111&quot;) ? &quot;VoIPIDD&quot;:&#13;&#10;!raw_voice_cdr.ROAMSTATE.equals(&quot;3&quot;) &amp;&amp; raw_voice_cdr.CALLTYPE == 3 &amp;&amp; (raw_voice_cdr.ACCESSPREFIX.isEmpty()||raw_voice_cdr.ACCESSPREFIX==null) ? &quot;Normal IDD&quot;: null " name="usage_subtype" type="id_String" xmi:id="_sc22OYHmEemxW6oSjnenpQ"/>
+      </varTables>
+      <outputTables name="transformed" sizeState="INTERMEDIATE" xmi:id="_sc22OoHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="raw_voice_cdr.SERIALNO " name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc22O4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.TIME_STAMP " name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc22PIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CALLINGPARTYNUMBER " name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc22PYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CALLEDPARTYNUMBER " name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc22PoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="Var.call_direction " name="CallDirection" nullable="true" type="id_String" xmi:id="_sc22P4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CALLDURATION " name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc22QIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.TERMINATIONREASON " name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc22QYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CHARGEDURATION " name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc22QoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.ACCESSPREFIX " name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc22Q4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.SUBCOSID " name="PricePlanId" nullable="true" type="id_String" xmi:id="_sc22RIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CALLTYPE " name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc22RYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.ROAMSTATE " name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc22RoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="row2.countryname " name="RoamCountry" nullable="true" type="id_String" xmi:id="_sc22R4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CALLEDHOMECOUNTRYCODE " name="HomeCountry" nullable="true" type="id_Integer" xmi:id="_sc22SIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.ONNETINDICATOR " name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc22SYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.CHARGEFROMPREPAID " name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc22SoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="raw_voice_cdr.PREPAIDBALANCE " name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc22S4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="Var.usage_type " name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc22TIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="Var.usage_subtype " name="UsageSubType" nullable="true" type="id_String" xmi:id="_sc22TYHmEemxW6oSjnenpQ"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="raw_voice_cdr" sizeState="INTERMEDIATE" xmi:id="_sc22ToHmEemxW6oSjnenpQ">
+        <mapperTableEntries name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc22T4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc22UIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc22UYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc22UoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="SERVICEFLOW" nullable="true" type="id_String" xmi:id="_sc22U4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc22VIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc22VYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc22VoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc22V4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="SUBCOSID" nullable="true" type="id_String" xmi:id="_sc22WIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc22WYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc22WoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGROAMCOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc22W4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDHOMECOUNTRYCODE" nullable="true" type="id_Integer" xmi:id="_sc22XIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc22XYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc22XoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc22X4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc22YIHmEemxW6oSjnenpQ"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE" xmi:id="_sc22YYHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="raw_voice_cdr.CALLINGROAMCOUNTRYCODE " name="countrycode" nullable="true" operator="=" type="id_Integer" xmi:id="_sc22YoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="countryname" nullable="true" type="id_String" xmi:id="_sc22Y4HmEemxW6oSjnenpQ"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="544" xmi:id="_sc22ZIHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2" xmi:id="_sc22ZYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true" xmi:id="_sc22ZoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc22Z4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELD" show="false" value="line" xmi:id="_sc22aIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/skotnala/cdrs/inbound/country.txt&quot;" xmi:id="_sc22aYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" xmi:id="_sc22aoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" xmi:id="_sc22a4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;" xmi:id="_sc22bIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" xmi:id="_sc22bYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;" xmi:id="_sc22boHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;" xmi:id="_sc22b4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false" xmi:id="_sc22cIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADER" value="1" xmi:id="_sc22cYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false" xmi:id="_sc22coHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_MIN_PARTITIONS" value="false" xmi:id="_sc22c4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="MIN_PARTITIONS" show="false" value="2" xmi:id="_sc22dIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_sc22dYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;" xmi:id="_sc22doHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8" xmi:id="_sc22d4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" xmi:id="_sc22eIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;" xmi:id="_sc22eYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;" xmi:id="_sc22eoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false" xmi:id="_sc22e4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" xmi:id="_sc22fIHmEemxW6oSjnenpQ">
+      <elementValue elementRef="SCHEMA_COLUMN" value="countrycode" xmi:id="_sc22fYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc22foHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryname" xmi:id="_sc22f4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc22gIHmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false" xmi:id="_sc22gYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false" xmi:id="_sc22goHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false" xmi:id="_sc22g4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false" xmi:id="_sc22hIHmEemxW6oSjnenpQ">
+      <elementValue elementRef="SCHEMA_COLUMN" value="countrycode" xmi:id="_sc22hYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc22hoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryname" xmi:id="_sc22h4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc22iIHmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="country reference data" xmi:id="_sc22iYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc22ioHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_2" xmi:id="_sc22i4HmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="countrycode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22jIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="countryname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22jYHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT" xmi:id="_sc22joHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="countrycode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22j4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="countryname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22kIHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22kYHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22koHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="inputLine" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22k4HmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="INTERMEDIATE" name="INTERMEDIATE" xmi:id="_sc22lIHmEemxW6oSjnenpQ">
+      <column defaultValue="" key="false" length="255" name="line" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22lYHmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="416" xmi:id="_sc22loHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3" xmi:id="_sc22l4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="EXTERNAL" name="MAP" value="" xmi:id="_sc22mIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO" xmi:id="_sc22mYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REPLICATED_JOIN" value="false" xmi:id="_sc22moHmEemxW6oSjnenpQ"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wr0Z8H66EemtAt9Gy4b2zA-tMap_3-PREVIEW.bmp" xmi:id="_sc22m4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false" xmi:id="_sc22nIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0" xmi:id="_sc22nYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0" xmi:id="_sc22noHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="enrichment" xmi:id="_sc22n4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc22oIHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="out3" xmi:id="_sc22oYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22ooHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22o4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22pIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22pYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CallDirection" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22poHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22p4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22qIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22qYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22qoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PricePlanId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22q4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22rIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22rYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="RoamCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22roHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="HomeCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22r4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22sIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22sYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22soHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22s4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="UsageSubType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22tIHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="FLOW" name="out_file" xmi:id="_sc22tYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22toHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22t4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22uIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22uYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CallDirection" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22uoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22u4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22vIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22vYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22voHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PricePlanId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22v4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22wIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22wYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="RoamCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22woHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="HomeCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22w4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc22xIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22xYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22xoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22x4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="UsageSubType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc22yIHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <nodeData xmi:id="_sc22yYHmEemxW6oSjnenpQ" xsi:type="TalendMapper:MapperData">
+      <uiProperties xmi:id="_sc22yoHmEemxW6oSjnenpQ"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE" xmi:id="_sc22y4HmEemxW6oSjnenpQ"/>
+      <outputTables name="out3" sizeState="INTERMEDIATE" xmi:id="_sc22zIHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="transformed.SERIALNO " name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc22zYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.TIME_STAMP " name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc22zoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLINGPARTYNUMBER " name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc22z4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLEDPARTYNUMBER " name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc220IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CallDirection " name="CallDirection" nullable="true" type="id_String" xmi:id="_sc220YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLDURATION " name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc220oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.TERMINATIONREASON " name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc2204HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CHARGEDURATION " name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc221IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.ACCESSPREFIX " name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc221YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.PricePlanId " name="PricePlanId" nullable="true" type="id_String" xmi:id="_sc221oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLTYPE " name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc2214HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.ROAMSTATE " name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc222IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.RoamCountry " name="RoamCountry" nullable="true" type="id_String" xmi:id="_sc222YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="row4.countryname " name="HomeCountry" nullable="true" type="id_String" xmi:id="_sc222oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.ONNETINDICATOR " name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc2224HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CHARGEFROMPREPAID " name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc223IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.PREPAIDBALANCE " name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc223YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.USAGESERVICETYPE " name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc223oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.UsageSubType " name="UsageSubType" nullable="true" type="id_String" xmi:id="_sc2234HmEemxW6oSjnenpQ"/>
+      </outputTables>
+      <outputTables name="out_file" sizeState="INTERMEDIATE" xmi:id="_sc224IHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="transformed.SERIALNO  " name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc224YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.TIME_STAMP  " name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc224oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLINGPARTYNUMBER  " name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc2244HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLEDPARTYNUMBER  " name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc225IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CallDirection  " name="CallDirection" nullable="true" type="id_String" xmi:id="_sc225YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLDURATION  " name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc225oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.TERMINATIONREASON  " name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc2254HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CHARGEDURATION  " name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc226IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.ACCESSPREFIX  " name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc226YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.PricePlanId  " name="PricePlanId" nullable="true" type="id_String" xmi:id="_sc226oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CALLTYPE  " name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc2264HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.ROAMSTATE  " name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc227IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.RoamCountry  " name="RoamCountry" nullable="true" type="id_String" xmi:id="_sc227YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="row4.countryname  " name="HomeCountry" nullable="true" type="id_String" xmi:id="_sc227oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.ONNETINDICATOR  " name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc2274HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.CHARGEFROMPREPAID  " name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc228IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.PREPAIDBALANCE  " name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc228YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.USAGESERVICETYPE  " name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc228oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries expression="transformed.UsageSubType  " name="UsageSubType" nullable="true" type="id_String" xmi:id="_sc2284HmEemxW6oSjnenpQ"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="transformed" sizeState="INTERMEDIATE" xmi:id="_sc229IHmEemxW6oSjnenpQ">
+        <mapperTableEntries name="SERIALNO" nullable="true" type="id_String" xmi:id="_sc229YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TIME_STAMP" nullable="true" type="id_String" xmi:id="_sc229oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLINGPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc2294HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLEDPARTYNUMBER" nullable="true" type="id_String" xmi:id="_sc22-IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CallDirection" nullable="true" type="id_String" xmi:id="_sc22-YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLDURATION" nullable="true" type="id_String" xmi:id="_sc22-oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="TERMINATIONREASON" nullable="true" type="id_String" xmi:id="_sc22-4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEDURATION" nullable="true" type="id_String" xmi:id="_sc22_IHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ACCESSPREFIX" nullable="true" type="id_String" xmi:id="_sc22_YHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="PricePlanId" nullable="true" type="id_String" xmi:id="_sc22_oHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CALLTYPE" nullable="true" type="id_Integer" xmi:id="_sc22_4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ROAMSTATE" nullable="true" type="id_String" xmi:id="_sc23AIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="RoamCountry" nullable="true" type="id_String" xmi:id="_sc23AYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="HomeCountry" nullable="true" type="id_Integer" xmi:id="_sc23AoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="ONNETINDICATOR" nullable="true" type="id_Integer" xmi:id="_sc23A4HmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="CHARGEFROMPREPAID" nullable="true" type="id_String" xmi:id="_sc23BIHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="PREPAIDBALANCE" nullable="true" type="id_String" xmi:id="_sc23BYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="USAGESERVICETYPE" nullable="true" type="id_String" xmi:id="_sc23BoHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="UsageSubType" nullable="true" type="id_String" xmi:id="_sc23B4HmEemxW6oSjnenpQ"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE" xmi:id="_sc23CIHmEemxW6oSjnenpQ">
+        <mapperTableEntries expression="transformed.HomeCountry " name="countrycode" nullable="true" operator="=" type="id_Integer" xmi:id="_sc23CYHmEemxW6oSjnenpQ"/>
+        <mapperTableEntries name="countryname" nullable="true" type="id_String" xmi:id="_sc23CoHmEemxW6oSjnenpQ"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="544" xmi:id="_sc23C4HmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_4" xmi:id="_sc23DIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true" xmi:id="_sc23DYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc23DoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELD" show="false" value="line" xmi:id="_sc23D4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/skotnala/cdrs/inbound/country.txt&quot;" xmi:id="_sc23EIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" xmi:id="_sc23EYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" xmi:id="_sc23EoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;" xmi:id="_sc23E4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" xmi:id="_sc23FIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;" xmi:id="_sc23FYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;" xmi:id="_sc23FoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false" xmi:id="_sc23F4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HEADER" value="1" xmi:id="_sc23GIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false" xmi:id="_sc23GYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="USE_MIN_PARTITIONS" value="false" xmi:id="_sc23GoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="MIN_PARTITIONS" show="false" value="2" xmi:id="_sc23G4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_sc23HIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;" xmi:id="_sc23HYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8" xmi:id="_sc23HoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" xmi:id="_sc23H4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;" xmi:id="_sc23IIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;" xmi:id="_sc23IYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false" xmi:id="_sc23IoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" xmi:id="_sc23I4HmEemxW6oSjnenpQ">
+      <elementValue elementRef="SCHEMA_COLUMN" value="countrycode" xmi:id="_sc23JIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc23JYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryname" xmi:id="_sc23JoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_sc23J4HmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false" xmi:id="_sc23KIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false" xmi:id="_sc23KYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false" xmi:id="_sc23KoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false" xmi:id="_sc23K4HmEemxW6oSjnenpQ">
+      <elementValue elementRef="SCHEMA_COLUMN" value="countrycode" xmi:id="_sc23LIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc23LYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="countryname" xmi:id="_sc23LoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_sc23L4HmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="country reference data" xmi:id="_sc23MIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc23MYHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_4" xmi:id="_sc23MoHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="countrycode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc23M4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="countryname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23NIHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT" xmi:id="_sc23NYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="countrycode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc23NoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="countryname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23N4HmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23OIHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23OYHmEemxW6oSjnenpQ"/>
+      <column defaultValue="" key="false" length="255" name="inputLine" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23OoHmEemxW6oSjnenpQ"/>
+    </metadata>
+    <metadata connector="INTERMEDIATE" name="INTERMEDIATE" xmi:id="_sc23O4HmEemxW6oSjnenpQ">
+      <column defaultValue="" key="false" length="255" name="line" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23PIHmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <node componentName="tHiveOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="416" xmi:id="_sc23PYHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveOutput_1" xmi:id="_sc23PoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2" xmi:id="_sc23P4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_2" xmi:id="_sc23QIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_SOURCE" value="HIVE_TABLE" xmi:id="_sc23QYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;default&quot;" xmi:id="_sc23QoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;voice_curated_table&quot;" xmi:id="_sc23Q4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="RETRIEVE_HIVE_TABLE_SCHEMA" value="false" xmi:id="_sc23RIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="LABEL" name="HIVE_TABLE_SCHEMA_NOTE" show="false" value="NOTE: Table will be stored as hive's default format if not exist&#10;&#9;&#9;&#9;" xmi:id="_sc23RYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEFORMAT" value="orc" xmi:id="_sc23RoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="OUTPUT_FOLDER" show="false" value="&quot;&quot;" xmi:id="_sc23R4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="CLOSED_LIST" name="SAVEMODE" value="Overwrite" xmi:id="_sc23SIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="HIVE_PARTITIONS_ENABLED" value="false" xmi:id="_sc23SYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TABLE" name="HIVE_PARTITIONS_KEYS" show="false" xmi:id="_sc23SoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Hive" xmi:id="_sc23S4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SPARK_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_sc23TIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="SORT_COLUMNS_ALPHABETICALLY" value="false" xmi:id="_sc23TYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="CHECK" name="DATE_TO_TIMESTAMP_DF_TYPE_SUBSTITUTION" value="true" xmi:id="_sc23ToHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="LABEL" value="curated voice data (ORC)" xmi:id="_sc23T4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sc23UIHmEemxW6oSjnenpQ"/>
+    <metadata connector="FLOW" name="tHiveOutput_1" xmi:id="_sc23UYHmEemxW6oSjnenpQ">
+      <column comment="" key="false" length="-1" name="SERIALNO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23UoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TIME_STAMP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23U4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLINGPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23VIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLEDPARTYNUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23VYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CallDirection" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23VoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23V4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="TERMINATIONREASON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23WIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEDURATION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23WYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ACCESSPREFIX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23WoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PricePlanId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23W4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CALLTYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc23XIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ROAMSTATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23XYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="RoamCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23XoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="HomeCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23X4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="ONNETINDICATOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_sc23YIHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="CHARGEFROMPREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23YYHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="PREPAIDBALANCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23YoHmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="USAGESERVICETYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23Y4HmEemxW6oSjnenpQ"/>
+      <column comment="" key="false" length="-1" name="UsageSubType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_sc23ZIHmEemxW6oSjnenpQ"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tReplicate_2" xmi:id="_sc23ZYHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23ZoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1" xmi:id="_sc23Z4HmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tHiveInput_1" xmi:id="_sc23aIHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1" xmi:id="_sc23aYHmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="masked" lineStyle="0" metaname="masked" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tHiveOutput_2" xmi:id="_sc23aoHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23a4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="masked" xmi:id="_sc23bIHmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="raw_data" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_2" target="tMap_2" xmi:id="_sc23bYHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23boHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="raw_data" xmi:id="_sc23b4HmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="voice_cdr" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_2" target="tMap_4" xmi:id="_sc23cIHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23cYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="voice_cdr" xmi:id="_sc23coHmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="filtered_voice_data" lineStyle="0" metaname="filtered_voice_data" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFileOutputDelimited_1" xmi:id="_sc23c4HmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23dIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="filtered_voice_data" xmi:id="_sc23dYHmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="raw_voice_cdr" lineStyle="0" metaname="tHiveInput_1" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_1" target="tMap_1" xmi:id="_sc23doHmEemxW6oSjnenpQ">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false" xmi:id="_sc23d4HmEemxW6oSjnenpQ">
+      <elementValue elementRef="TRACE_COLUMN" value="PREPAIDBALANCE" xmi:id="_sc23eIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23eYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23eoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="USAGESERVICETYPE" xmi:id="_sc23e4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23fIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23fYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICEFLOW" xmi:id="_sc23foHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23f4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23gIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALLDURATION" xmi:id="_sc23gYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23goHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23g4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUBCOSID" xmi:id="_sc23hIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23hYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23hoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="TIME_STAMP" xmi:id="_sc23h4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23iIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23iYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALLEDPARTYNUMBER" xmi:id="_sc23ioHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23i4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23jIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALLTYPE" xmi:id="_sc23jYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23joHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23j4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALLEDHOMECOUNTRYCODE" xmi:id="_sc23kIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23kYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23koHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ROAMSTATE" xmi:id="_sc23k4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23lIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23lYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ONNETINDICATOR" xmi:id="_sc23loHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23l4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23mIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGEDURATION" xmi:id="_sc23mYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23moHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23m4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERIALNO" xmi:id="_sc23nIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23nYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23noHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCESSPREFIX" xmi:id="_sc23n4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23oIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23oYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALLINGPARTYNUMBER" xmi:id="_sc23ooHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23o4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23pIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="TERMINATIONREASON" xmi:id="_sc23pYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23poHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23p4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGEFROMPREPAID" xmi:id="_sc23qIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23qYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23qoHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALLINGROAMCOUNTRYCODE" xmi:id="_sc23q4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23rIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23rYHmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23roHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="raw_voice_cdr" xmi:id="_sc23r4HmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="transformed" lineStyle="0" metaname="transformed" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_3" xmi:id="_sc23sIHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23sYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="transformed" xmi:id="_sc23soHmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1" xmi:id="_sc23s4HmEemxW6oSjnenpQ">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false" xmi:id="_sc23tIHmEemxW6oSjnenpQ">
+      <elementValue elementRef="TRACE_COLUMN" value="countrycode" xmi:id="_sc23tYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23toHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23t4HmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="countryname" xmi:id="_sc23uIHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" xmi:id="_sc23uYHmEemxW6oSjnenpQ"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" xmi:id="_sc23uoHmEemxW6oSjnenpQ"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23u4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2" xmi:id="_sc23vIHmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tHiveOutput_1" xmi:id="_sc23vYHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23voHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3" xmi:id="_sc23v4HmEemxW6oSjnenpQ"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tMap_3" xmi:id="_sc23wIHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_sc23wYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4" xmi:id="_sc23woHmEemxW6oSjnenpQ"/>
+  </connection>
+  <subjob xmi:id="_sc23w4HmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_sc23xIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_3" xmi:id="_sc23xYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ingest voice CDR data from HDFS to Hive and mask PII information during ingestion" xmi:id="_sc23xoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" xmi:id="_sc23x4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_sc23yIHmEemxW6oSjnenpQ"/>
+  </subjob>
+  <subjob xmi:id="_sc23yYHmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_sc23yoHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConfiguration_2" xmi:id="_sc23y4HmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="HDFS connection" xmi:id="_sc23zIHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" xmi:id="_sc23zYHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_sc23zoHmEemxW6oSjnenpQ"/>
+  </subjob>
+  <subjob xmi:id="_sc23z4HmEemxW6oSjnenpQ">
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" xmi:id="_sc230IHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveConfiguration_2" xmi:id="_sc230YHmEemxW6oSjnenpQ"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Connect to Hive DB" xmi:id="_sc230oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" xmi:id="_sc2304HmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_sc231IHmEemxW6oSjnenpQ"/>
+  </subjob>
+  <subjob xmi:id="_sc231YHmEemxW6oSjnenpQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveInput_1" xmi:id="_sc231oHmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_sc2314HmEemxW6oSjnenpQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_sc232IHmEemxW6oSjnenpQ"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_780bcc94-46fd-4746-94d4-17f2655f8aab"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aACy4fS6sUzA0uAHUZhFRC7wgISew5fpHxkhtTN6q6prSjHfV/LaWHuzF1/Sb8S3ffheTE5BI8qm
+VXiK4EFAbA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ce747d02-31fd-48dd-b082-9916e21eed04"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Tgl8Bth5lXKencKBRztbvnPItJl38jr+iTKaPIDFIu7xCDKSylHQ6WIafnvCAcbsw6Chaj/A6AKm
+pm2/ZWbbxQ==</DigestValue></Reference></SignedInfo><SignatureValue>zY4hRhTWsXYIhQPjWQCUnV+JoEUSQiuq2AgOVudxo9PoqUnT9eEjK3Wggdr8av+7R4ym070OelBY
+PcPiaVT3XBOmO13w8henRqZtbF+qVL/di0vLxAHD1+w20k0p2EWdiCDOxaccODLC/uWmPMyI2ti2
+Oh3+ZOa1MU9h19k1m/r87n+S5JXQAJ4HzHzM+7cDVyVrdI7Q2hlo0seHqUe2x6I4Y8YF09wWuzyW
+k1cxSReLPpMKrSXiv1mHlENlAjcHDVlOW7dtT5OEFejegqtGUj/lf8B6MxkcCBB5LfMZN2pU1G1+
+56QKx9LRBD4nAFqE/lhLSQHq6RE8aTPQ7wICzQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ce747d02-31fd-48dd-b082-9916e21eed04" Target="#_780bcc94-46fd-4746-94d4-17f2655f8aab"><Timestamp>2019-07-22 09:08:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
