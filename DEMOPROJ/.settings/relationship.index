@@ -1,5 +1,16 @@
 [ {
   "baseItem" : {
+    "id" : "_eWaXQKySEem5f9V3VCIm2g",
+    "version" : "0.1",
+    "type" : "hadoopCluster"
+  },
+  "relatedItems" : [ {
+    "id" : "HDP_3_1_2_1_1_dynamic_20190722115642458_0000",
+    "version" : "Latest",
+    "type" : "dynamicDistribution"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Wr0Z8H66EemtAt9Gy4b2zA",
     "version" : "0.1",
     "type" : "job"
