@@ -14,13 +14,14 @@
     <module>jobs/process/AIS_Ingestion_Demo/step1_filesystem_hdfs_ingesion_0.1</module>
     <module>jobs/process/hdfsconnection_0.1</module>
     <module>jobs/process/hdfs_ingesion_file_0.1</module>
+    <module>jobs/process/MAS_HW_HDFS_Demo/step1_filesystem_hdfs_ingesion_copy_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
