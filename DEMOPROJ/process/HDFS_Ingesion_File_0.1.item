@@ -58,7 +58,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Public/Talend02/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -141,14 +141,12 @@
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
     <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/home/skotnala/data/cdr/inbound&quot;"/>
-    <elementParameter field="DIRECTORY_HADOOP" name="REMOTEDIR" value="&quot;/user/skotnala/cdrs/inbound&quot;"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Users/tuser/Desktop/FileLocation/inbound&quot;"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="REMOTEDIR" value="&quot;/user/tempuser/hdfs/inbound&quot;"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
     <elementParameter field="TABLE" name="FILES">
       <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
-      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;country.txt&quot;"/>
       <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
@@ -161,25 +159,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHDFSPut_1"/>
   </node>
-  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/skotnala/data/cdr/inbound/&quot; +((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
-    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
-    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Users/tmp-gkrishna/Documents/workspace&quot;"/>
-    <elementParameter field="DIRECTORY" name="DESTINATION" value="&quot;/home/skotnala/data/cdr/archive&quot;"/>
-    <elementParameter field="CHECK" name="RENAME" value="false"/>
-    <elementParameter field="TEXT" name="DESTINATION_RENAME" show="false" value="&quot;NewName.temp&quot;"/>
-    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
-    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
-    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
-    <elementParameter field="CHECK" name="FAILON" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Archive file"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileCopy_1"/>
-  </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/skotnala/data/cdr/inbound&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/tuser/Desktop/FileLocation/inbound&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -201,7 +183,7 @@
   </node>
   <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_1"/>
-    <elementParameter field="FILE" name="FILE_NAME" value="&quot;/home/skotnala/data/cdr/archive/&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="&quot;C:/Users/tuser/Desktop/FileLocation/archive/&quot;+ ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
@@ -214,6 +196,7 @@
   </node>
   <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/home/skotnala/data/cdr/inbound/&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Users/tmp-gkrishna/Documents/workspace&quot;"/>
@@ -228,7 +211,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileCopy_2"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//context.in_file = ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));&#10;&#10;System.out.println(&quot;**********HDFS File Ingestion Success: &quot; + ((String)globalMap.get(&quot;tFileExist_1_FILENAME&quot;)) );&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -238,24 +221,22 @@
   </node>
   <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_3"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_-5YycIEdEem1p9x_sWwddg"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_12"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_3_1_2_1_1_dynamic_20190722115642458_0000"/>
     <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
     <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
     <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
-    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ip-172-30-0-40.us-west-2.compute.internal:8020&quot;"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ec2-34-196-144-65.compute-1.amazonaws.com:50070&quot;"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
-    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
-    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@PRESALES.TALEND.US&quot;"/>
-    <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
-    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;skotnala&quot;"/>
-    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/home/skotnala/skotnala.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;hdfs/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="true"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;skotnala&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/home/skotnala/skotnala.keytab&quot;"/>
     <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
-    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;"/>
     <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
@@ -275,11 +256,8 @@
     <elementParameter field="TEXT" name="LABEL" value="CDH_Cluster_HDFS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSPut_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSPut_1" target="tFileCopy_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSPut_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSPut_1" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCopy_1" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_1" target="tJava_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileExist_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
@@ -295,6 +273,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileCopy_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSConnection_3" offsetLabelX="0" offsetLabelY="0" source="tHDFSConnection_3" target="tHDFSPut_1">
@@ -304,13 +283,6 @@
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSPut_1"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Move CDR file to HDFS"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Archive ingested file"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
@@ -349,13 +321,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1da567d4-928f-4f4e-8373-0dd31ddd3306"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DRA/M8I6uVYQZwUu69X++aZB/bDteenXzu0lZWrM+zEs/bTCfa5pQhepC36078AV09nBBJ0pBgg5
-YoliLzxfSQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8433b06c-e438-4c56-ae31-93ddcc922659"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7RBvbk7q4eCZ6LJVvQ0PQ4MqAnbkcScKmGacvAsvfAFaDijHsD7fVJAIEyfGOdINeKTaKsjDSftt
-TnYFj0kh6w==</DigestValue></Reference></SignedInfo><SignatureValue>l4LwoLDb2iCPR/lsPTY1JT3TvUaOZrFbnhC2fBDo74kYPXXd/SLAo09Tt4TvjI88pc8NCdtjpuEV
-RcweRrIJeqofLbVl2DyRrIntn7Hw15vmMDb4LxpbwhZ7WbuSXrNcG1qgO50HHm7AHC1NODchA+by
-QVO4dPNxD/YAe0XKauvXJjw7Bgv7m/NOLG1uSW+Scgxo9H4FywvnBVr/c+Su4T6oQ8NTtWbay09U
-perfWKJsze7xUyFZPVKUax3RZlYiuK3A4RA3Siu1v95MaUn4s5sduhW+85lRnp+xCY7LI25zXiQI
-muostLF0QJ6TXREIP3bgFCBF1mI63v8wQlUbZA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f548823e-b265-40bd-9a80-77e03b564e45"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mNuFOY9HXYWtrr/dL/e9iiFVLxbqZC4G56kA73vwZA8SdDnoDGcb7iSgxQomOemmKlJzJ20GHztI
+E1xx7sJrWw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_14c32cc0-bbf7-41c4-85fd-dc8c8cd60488"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ce8D7BntKUuuBov1donVUS1I6wa0pFgtdbbMaKiCz5an+32tkJ5gFukICCnvslJbEbA3CwuGnO+U
+CIScNlGyfw==</DigestValue></Reference></SignedInfo><SignatureValue>r+h0W+6BfpFBurzHerlEnb5Gpcwi4HqM74jYsS6+J9eE6JWlPAIJFOO9EytRkCAgJoHQn7zw2Su6
+GF/o5XZg9pBeZjxA3WxUseUjudQ1yrTWB2V9vhJR50uvuNfgWElGAwqPBEmBWrcehikiUSfYGiS5
+P+n5/jwf2z7nmDmSJ5S6jedyx1Ud0CN1FwcEzHDA73SeF9DJUtg38cxNLJatMBKO2ErazuvmJ2wH
+XJOspueA1g8CgBhpBd3v4UicYjiQOljSlxyJGA33Y3sWMMaNcFHg/Rln5miInYOPLLxjs0QPscwx
+0YUkqjhB2Dkw7f9mACkaCaUnmv5K3stOHlza1Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -379,4 +351,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8433b06c-e438-4c56-ae31-93ddcc922659" Target="#_1da567d4-928f-4f4e-8373-0dd31ddd3306"><Timestamp>2019-07-23 07:16:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_14c32cc0-bbf7-41c4-85fd-dc8c8cd60488" Target="#_f548823e-b265-40bd-9a80-77e03b564e45"><Timestamp>2019-07-23 07:27:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

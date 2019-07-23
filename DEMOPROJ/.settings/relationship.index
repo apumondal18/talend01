@@ -170,9 +170,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_-5YycIEdEem1p9x_sWwddg",
+    "id" : "HDP_3_1_2_1_1_dynamic_20190722115642458_0000",
     "version" : "Latest",
-    "type" : "property"
+    "type" : "dynamicDistribution"
   }, {
     "id" : "DQTechnical",
     "version" : "Latest",
