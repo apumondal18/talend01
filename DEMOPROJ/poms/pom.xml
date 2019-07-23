@@ -13,7 +13,7 @@
     <module>jobs/process_mr/AIS_Ingestion_Demo/step2_load_and_process_hive_0.1</module>
     <module>jobs/process/AIS_Ingestion_Demo/step1_filesystem_hdfs_ingesion_0.1</module>
     <module>jobs/process/hdfsconnection_0.1</module>
-    <module>jobs/process/step1_filesystem_hdfs_ingesion_copy_0.1</module>
+    <module>jobs/process/hdfs_ingesion_file_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
