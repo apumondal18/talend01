@@ -16,11 +16,7 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "HDP_3_1_2_1_1_dynamic_20190722115642458_0000",
-    "version" : "Latest",
-    "type" : "dynamicDistribution"
-  }, {
-    "id" : "_80KTAK4aEemzGPId3Z55YQ",
+    "id" : "_JfHn0K7NEemnMOHqZFl9RA",
     "version" : "Latest",
     "type" : "property"
   }, {
