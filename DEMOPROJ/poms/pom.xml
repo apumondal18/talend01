@@ -19,13 +19,14 @@
     <module>jobs/process/hdfsconnection_cluster2_7_0.1</module>
     <module>jobs/process/MAS_HW_HDFS_Demo/load_to_hive_0.1</module>
     <module>jobs/process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion/hw_hdfs_xml_ingesion_0.1</module>
+    <module>jobs/process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_xml_ingesion_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
