@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-07-24T13:55:18.102+0000">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-07-27T15:11:24.117+0000">
+  <deletedFolders>process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion</deletedFolders>
   <deletedItems id="_-5YycIEdEem1p9x_sWwddg" path="" type="HDFS"/>
+  <deletedItems id="_h9gHIK2tEem7-cAvxUNWnA" path="MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion" type="PROCESS"/>
 </recyclebin:RecycleBin>
