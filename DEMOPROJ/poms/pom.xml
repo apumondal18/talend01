@@ -20,6 +20,24 @@
     <module>jobs/process/MAS_HW_HDFS_Demo/load_to_hive_0.1</module>
     <module>jobs/process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion/hw_hdfs_xml_ingesion_0.1</module>
     <module>jobs/process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_xml_ingesion_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_book_ratings_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book_ratings_0.1</module>
+    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_ingesion_copy_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_db_user_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book1_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/job_load_hive_emp_0.1</module>
+    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_xml_ingesion_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_analytics_master_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book2_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_user1_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_std_job_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_hdfs_job_bg_practice_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_hive_job_di_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_user2_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_stage_master_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/job_test_counts_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_hdfs_job_di_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_books_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
