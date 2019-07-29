@@ -37,19 +37,19 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_STATCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_LOGCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_METERCATCHER_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -97,7 +97,7 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_DATABASE_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -109,13 +109,13 @@
         "show" : true,
         "field" : "CLOSED_LIST",
         "name" : "DB_TYPE",
-        "value" : "tJDBCOutput",
+        "value" : "tPostgresqlOutput",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CLOSED_LIST",
         "name" : "DB_VERSION",
-        "value" : "ORACLE_12",
+        "value" : "V9_X",
         "contextMode" : false
       }, {
         "show" : true,
@@ -138,19 +138,19 @@
         "show" : true,
         "field" : "TEXT",
         "name" : "HOST",
-        "value" : "\"\"",
+        "value" : "\"mysqldb.clbrn7mmudsd.us-east-1.rds.amazonaws.com\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "PORT",
-        "value" : "\"\"",
+        "value" : "\"3306\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "DBNAME",
-        "value" : "\"\"",
+        "value" : "\"amc\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -174,13 +174,13 @@
         "show" : true,
         "field" : "TEXT",
         "name" : "USER",
-        "value" : "\"\"",
+        "value" : "\"master\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS",
-        "value" : "0RMsyjmybrE=",
+        "value" : "PoLvNyVG2XX9RfTlrhdiMA==",
         "contextMode" : false
       }, {
         "show" : true,
@@ -228,7 +228,7 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "CATCH_REALTIME_STATS",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
