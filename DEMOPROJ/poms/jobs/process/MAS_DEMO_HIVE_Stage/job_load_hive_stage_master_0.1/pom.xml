@@ -94,11 +94,6 @@
     </dependency>
     <dependency>
       <groupId>org.example.demoproj.job</groupId>
-      <artifactId>job_load_hive_Book_Ratings</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.demoproj.job</groupId>
       <artifactId>job_load_hive_user1</artifactId>
       <version>0.1.0</version>
     </dependency>
