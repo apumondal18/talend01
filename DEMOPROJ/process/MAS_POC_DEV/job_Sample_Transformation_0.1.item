@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="HDFS_USer_File" prompt="HDFS_USer_File?" promptNeeded="false" type="id_String" value="User_1.csv"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="4"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -182,14 +184,18 @@
       <column comment="" key="false" length="-1" name="Location" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
+    <metadata connector="FLOW" label="Rejected" name="Rejected"/>
+    <metadata connector="FLOW" label="Filter" name="Filter"/>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Target" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.User_id " name="User_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row1.Location " name="Location" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.Age " name="Age" nullable="true" type="id_Integer"/>
       </outputTables>
+      <outputTables name="Rejected" sizeState="INTERMEDIATE"/>
+      <outputTables name="Filter" sizeState="INTERMEDIATE"/>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="User_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="Location" nullable="true" type="id_String"/>
@@ -289,11 +295,31 @@
       <column comment="" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Ofh3QLKqEemWM_DFIs_Kqg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Filter" sizeState="INTERMEDIATE"/>
+    </nodeData>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHDFSInput_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="Target" lineStyle="0" metaname="Target" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+  <connection connectorName="FLOW" label="Target" lineStyle="0" metaname="Target" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFileOutputDelimited_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Age"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -301,6 +327,10 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Target"/>
+  </connection>
+  <connection connectorName="FLOW" label="Filter" lineStyle="0" metaname="Filter" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Filter"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tHDFSInput_2" offsetLabelX="0" offsetLabelY="0" source="tHDFSInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -311,13 +341,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9f5b806f-0d93-41a2-90e6-92b18ea88454"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4+cfOaPd9GJMzD/sVhqB7y2J4Ugdq2pL6qK4P9lwHRpEXWc+P0/1TMjll4DUPMSNm1DaaXBgr3CI
-vVbyHntTLA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_12885a32-f751-41b7-ab75-8003a985d6e1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tCyn4oHo0RWfKE1ZxJhHwE35UxSZNHWZ/EAQWZuC3NR+l1jWEPHEQNHp7rd1U2G3F3pgXQCpp35t
-I9l4Ti1dpA==</DigestValue></Reference></SignedInfo><SignatureValue>CLemmCROu6ex5rQOV3kEBjDpp6Ta1H5pt2bJvhrmFzGLINM2tLaXUudbIGFRyLNhXnbtT4RG5h7k
-rTvMD6y4sEqpqsXtAOquzhOpWkTNZwOroYXCFVDRwJs4mO7QkuwA/A+lC21nQv7pwAMygEyK39ZY
-nZysLoQhpnLADB1IpjpQPHDFmqBCDN/H+zwUiIQIImHDedvakI1gTMdgoSJznDt8+kL2AqnQbee3
-If9ANJkrjZReYxeJXgjfeTo20CKv6PPOo23SqdibXl3v8fki49fGc9Zg5EWDCVFQy4f2Jb/jwgQf
-x06cTjEZwqBZYP31jNKkPbneZtTkKWsExM1SEw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b907bfc9-f1f4-4e5d-9eed-e9a190b5f6d4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ToJFsAK6yn7pDia/jAEWN4R/GJU/YHCLdk90K3sFtNDMfbiQhqpeom7mDCYOOPZNP+C0ypDk26R4
+slyhxoYFdw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1ec75af5-2b5d-42ff-9942-23298c07a95c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mAY69V0gIj04YE6CtFc8TYQ+YnHANcXEryogEJQDE9nN+3k1cyqIbO9Y91TsO+JhkVeUsbZuVjqz
+xa2+ZORw2w==</DigestValue></Reference></SignedInfo><SignatureValue>LEepRaqwKftGNZstMXHMLJ3Y1rT8qYiXDsftOAuqH+ckkWhDvG/Mv+3wPiSnkV048pVVZJWjcrI6
+pAxVjIElv9fIiIe+wVBK7yrS3bKUdQ9Xal1Q/VgNim/XzlilFBFfpGcStn+f1tNc/EKtbh/X3DHy
+C3dMtI55TNkTS5ueUTtcOQcY7ZekWje4vL9fQ+6e83QxZ49uyZvjbFu/REh+NA7+pgQ8JHg+FW4G
+ozjDZ5KqKJLdZleCDTArsD5UXC2ce7cyqybZpkp1kDj1bBHWF1qJWZSO/lD7UcY8eIv7fD56jeR/
+j7a02vq400PmkU9RDukjPIh7fxcv4YgkSB/EFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -341,4 +371,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_12885a32-f751-41b7-ab75-8003a985d6e1" Target="#_9f5b806f-0d93-41a2-90e6-92b18ea88454"><Timestamp>2019-07-30 10:31:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1ec75af5-2b5d-42ff-9942-23298c07a95c" Target="#_b907bfc9-f1f4-4e5d-9eed-e9a190b5f6d4"><Timestamp>2019-08-01 02:44:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
