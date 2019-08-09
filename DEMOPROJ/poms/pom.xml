@@ -42,13 +42,14 @@
     <module>jobs/process/MAS_POC_DEV/test_hive_conn_0.1</module>
     <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_ingestion_master_0.1</module>
     <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/copy_of_hw_hdfs_ingesion_0.1</module>
+    <module>jobs/process/job_test_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
