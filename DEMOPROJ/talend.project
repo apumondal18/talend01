@@ -8,4 +8,6 @@
   <TalendProperties:User xmi:id="_ZtO_8KyCEem5f9V3VCIm2g" login="purushottam.dattatrayraojoshi@wipro.com" firstName="Purushottam" lastName="Joshi" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_4Rbe966LEemAsP3AC9JEvQ" login="ganesh@wipro.com" firstName="Ganesh" lastName="Arunasalam" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_1XkygLP1Eem-Eb-3X5q6FQ" login="rohan@wipro.com" firstName="rohan" lastName="rohan" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yZa4UMo7Eemo5YmM8fbxQA" login="user01@wipro.com" firstName="user01" lastName="user01" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_yZa4Uco7Eemo5YmM8fbxQA" login="user02@wipro.com" firstName="user02" lastName="user02" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
