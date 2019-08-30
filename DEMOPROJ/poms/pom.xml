@@ -45,13 +45,14 @@
     <module>jobs/process/job_test_0.1</module>
     <module>jobs/process_mr/MAS_SPARK_JOBS_ANAYTICS/job_spark_hive_to_hive_users_0.1</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/db_connection_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
