@@ -63,11 +63,6 @@
       <version>1.2.17</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>mssql-jdbc</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.12</version>
@@ -75,11 +70,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talend_DB_mssqlUtil-1.2-20171017</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
