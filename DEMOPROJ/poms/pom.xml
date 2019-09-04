@@ -47,13 +47,14 @@
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>jobs/process/Reusable_Frameworks/db_connection_0.1</module>
     <module>jobs/process/Reusable_Frameworks/xls_file_iteration_0.1</module>
+    <module>jobs/process/AIS_Ingestion_Demo/filesystem_hdfs_ingesion_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
