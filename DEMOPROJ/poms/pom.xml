@@ -50,13 +50,14 @@
     <module>jobs/process/AIS_DEMO_PROJECT/filesystem_hdfs_ingesion_0.1</module>
     <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/readconfigproperties_0.1</module>
     <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/batchheadermonitor_0.1</module>
+    <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/new_connection_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
