@@ -37,19 +37,19 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_STATCATCHER_FLAG",
-        "value" : "true",
+        "value" : "false",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_LOGCATCHER_FLAG",
-        "value" : "true",
+        "value" : "false",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_METERCATCHER_FLAG",
-        "value" : "true",
+        "value" : "false",
         "contextMode" : false
       }, {
         "show" : true,
