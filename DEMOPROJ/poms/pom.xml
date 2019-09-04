@@ -47,6 +47,7 @@
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>jobs/process/Reusable_Frameworks/db_connection_0.1</module>
     <module>jobs/process/Reusable_Frameworks/xls_file_iteration_0.1</module>
+    <module>jobs/process/AIS_DEMO_PROJECT/filesystem_hdfs_ingesion_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
