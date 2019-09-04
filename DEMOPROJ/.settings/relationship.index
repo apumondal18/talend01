@@ -1997,10 +1997,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_-5YycIEdEem1p9x_sWwddg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
