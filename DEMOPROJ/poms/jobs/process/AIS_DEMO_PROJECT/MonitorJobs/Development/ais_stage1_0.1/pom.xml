@@ -6,12 +6,12 @@
     <groupId>org.example.demoproj</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.1.1</version>
-    <relativePath>../../../../</relativePath>
+    <relativePath>../../../../../../</relativePath>
   </parent>
   <groupId>org.example.demoproj.job</groupId>
-  <artifactId>FileSystem_HDFS_Ingesion</artifactId>
+  <artifactId>AIS_STAGE1</artifactId>
   <version>0.1.0</version>
-  <name>DEMOPROJ FileSystem_HDFS_Ingesion-0.1.0 (0.1,Job Designs)</name>
+  <name>DEMOPROJ AIS_STAGE1-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,26 +19,26 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>demoproj</talend.project.name.lowercase>
-    <talend.job.path>demoproj/filesystem_hdfs_ingesion_0_1</talend.job.path>
+    <talend.job.path>demoproj/ais_stage1_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <talend.product.version>7.1.1.20181026_1147</talend.product.version>
-    <talend.job.finalName>filesystem_hdfs_ingesion_0_1</talend.job.finalName>
+    <talend.job.finalName>ais_stage1_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.demoproj.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.demoproj.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dhadoop.home.dir=c:/tmp/winutils -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>FileSystem_HDFS_Ingesion</talend.job.name>
-    <talend.job.id>_nJaF0M7fEemXEYHXEqpV_g</talend.job.id>
+    <talend.job.name>AIS_STAGE1</talend.job.name>
+    <talend.job.id>_NhxQYMoVEem-Kq2xlX-jgQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
-    <talend.job.folder>ais_demo_project/</talend.job.folder>
+    <talend.job.folder>ais_demo_project/monitorjobs/development/</talend.job.folder>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
@@ -51,11 +51,6 @@
       <groupId>dom4j</groupId>
       <artifactId>dom4j</artifactId>
       <version>1.6.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>filecopy</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -78,13 +73,18 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.example.demoproj.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.example.demoproj.job</groupId>
-      <artifactId>BatchHeaderMonitor</artifactId>
+      <artifactId>AIS_DEVELOPMENT</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>

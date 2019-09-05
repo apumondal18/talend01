@@ -51,6 +51,10 @@
     <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/new_connection_0.1</module>
     <module>jobs/process/Reusable_Frameworks/batchheadermonitor_0.1</module>
     <module>jobs/process/Reusable_Frameworks/readconfigproperties_0.1</module>
+    <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/Development/ais_file_developement_0.1</module>
+    <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/Development/ais_stage1_0.1</module>
+    <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/Development/ais_development_0.1</module>
+    <module>jobs/process/monitor_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
