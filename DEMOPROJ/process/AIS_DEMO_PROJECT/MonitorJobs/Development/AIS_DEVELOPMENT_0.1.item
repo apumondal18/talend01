@@ -177,6 +177,7 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="TF_PATH"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
@@ -283,7 +284,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Numeric.sequence(&quot;s1&quot;,1,1).toString()+TalendDate.getDate(&quot;CCYYMMDDhhmmss&quot;) " name="var1" type="id_String"/>
       </varTables>
@@ -291,7 +292,7 @@
         <mapperTableEntries expression="" name="Id" type="id_Integer"/>
         <mapperTableEntries expression="Var.var1 " name="BatchIdFk" nullable="true" type="id_String"/>
         <mapperTableEntries expression="context.jobname" name="JobName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_2_CURRENT_FILE&quot;)) " name="FileName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))" name="FileName" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn " name="SourceCount" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="0 " name="TargetCount" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="0" name="RejectedCount" nullable="true" type="id_Integer"/>
@@ -772,13 +773,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a96eb488-a593-45ed-a5b6-6dc1e3beab0d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+HgeR2MbHK28/0LYY+17ahrUe9WIA6+uEJci1JkP3QQnX08iDrVhJ7bM+GBv6tstRc8IhJzKkyia
-AqDom0KeOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_317bff48-14c9-4b6c-8911-882cb81f6ed4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LsGdUMlbyYgycxXBG4YEFW0wGfzO6DaiDsX/9DAvHNTFrANW6Gil9TsTmQi3z2TW/GyHcehDp2+8
-zBKYqvGl5Q==</DigestValue></Reference></SignedInfo><SignatureValue>0XqbJuDOMOBvZwMfIkTDZqciEOadCeyM+nLauEpicDE6Xcy8dSGiHJytJUX8KMFFdorSc+56GEjs
-JgACCQAAP/jmgakziz8RVn3zdC0MPWbUEX1DcVtHGuSOSeMqhD80zfJ+3hrI2yP6h15rTi74lHYM
-kqSKqkis9lHFtPn9wavYDLt0eAK0dgRMYlh9I4TCweizJpjgx4vgAgwETKnoTGaKbzpawDoxeZqb
-ipCdmoQtZHFtvkrPUwOqH+8hjmU/vrS9uAMolcjxlc/jRVOjWiv+zeQV03doPAacsvw31WuH5jTE
-YTbP/fUkIEeCeTE97taWUWyUPnrvTwu69ad9Cw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1f29242f-1208-4064-bbe0-ed8d39919ff2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dPgYmyNWLaoa14QdvCtIEO90hJTbXqCifOE7MO7ZPuK1SbPOdw21jbjFbY6p35ykHgQXkMmmcbVe
+IBZThp+YSA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e5176445-f391-435a-8406-22b0ecbb3df1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2WbdgrgL1CMEWTfEn693dPFm7npiWBmegWRPwoeoWCbFdi5SBe99n3ky4dGbP0IASVeihn+ytz1D
+sp1bDA/f4w==</DigestValue></Reference></SignedInfo><SignatureValue>Bsll3/9QDckwPuOXYiAir8a12sX2BEkJOGVkusaFljpynoIdaNgtRlP98WISaWzJfm3fLKy33iJj
+T4FpbaX1bDqGT7O+R5vp/Z6mGEIMRGrqJvtRFJqLwgt29o7X2XG+AMbXGHOyFX83XEa2s44oQ+Wx
+5VEPkmnnM+0sXe2hz3pmgt2MqpAQVsNwGFj5c3tqcKTaq3x+goL1HMsbWJERgObR5GOoc+6lDE+B
+8TiZEUmoUohTWwQS1BUnToUDibfs8NaIC+yUgPlePN1aESKsc3JO1a61bIWqtcZ3nOt0mTVpoFJs
+nqA1DCo+WZ+SDv2uw8KRT1xKsE3jMNbBXja3Fw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -802,4 +803,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_317bff48-14c9-4b6c-8911-882cb81f6ed4" Target="#_a96eb488-a593-45ed-a5b6-6dc1e3beab0d"><Timestamp>2019-09-09 10:35:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e5176445-f391-435a-8406-22b0ecbb3df1" Target="#_1f29242f-1208-4064-bbe0-ed8d39919ff2"><Timestamp>2019-09-09 10:39:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
