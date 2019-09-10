@@ -52,10 +52,10 @@
     <module>jobs/process/Reusable_Frameworks/batchheadermonitor_0.1</module>
     <module>jobs/process/Reusable_Frameworks/readconfigproperties_0.1</module>
     <module>jobs/process/monitor_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/ais_development_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_file_developement_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_stage1_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_demo_ingestion_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/audit_framework_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
