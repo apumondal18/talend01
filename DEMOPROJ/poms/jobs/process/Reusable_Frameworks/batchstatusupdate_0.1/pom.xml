@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.demoproj.job</groupId>
-  <artifactId>ReadConfigProperties</artifactId>
+  <artifactId>BatchStatusUpdate</artifactId>
   <version>0.1.0</version>
-  <name>DEMOPROJ ReadConfigProperties-0.1.0 (0.1,Job Designs)</name>
+  <name>DEMOPROJ BatchStatusUpdate-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,12 +19,12 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>demoproj</talend.project.name.lowercase>
-    <talend.job.path>demoproj/readconfigproperties_0_1</talend.job.path>
+    <talend.job.path>demoproj/batchstatusupdate_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <talend.product.version>7.1.1.20181026_1147</talend.product.version>
-    <talend.job.finalName>readconfigproperties_0_1</talend.job.finalName>
+    <talend.job.finalName>batchstatusupdate_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.demoproj.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.demoproj.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,8 +33,8 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>ReadConfigProperties</talend.job.name>
-    <talend.job.id>_Buf2oM73EemMIZHJG-V2IA</talend.job.id>
+    <talend.job.name>BatchStatusUpdate</talend.job.name>
+    <talend.job.id>_szeAkMr4Eemwybc1jwb_Jg</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
@@ -58,6 +58,11 @@
       <version>1.2.17</version>
     </dependency>
     <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.12</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
       <version>6.0.0</version>
@@ -65,11 +70,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talendcsv</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_zYNk8NSFEemCE4moRw_Dyg">
+    <contextParameter comment="" name="BatchId" prompt="BatchId?" promptNeeded="false" type="id_String" value="20190904023505" xmi:id="_zYNk8dSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value="BatchHeaderMonitor" xmi:id="_zYNk8tSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="StartDate" prompt="StartDate?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:09" xmi:id="_zYNk89SFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="EndDate" prompt="EndDate?" promptNeeded="false" type="id_Date" value="2019-08-29 16:46:16" xmi:id="_zYNk9NSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="CreatedBy" prompt="CreatedBy?" promptNeeded="false" type="id_String" value="Talend" xmi:id="_zYNk9dSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="CreatedOn" prompt="CreatedOn?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:27" xmi:id="_zYNk9tSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="UpdatedBy" prompt="UpdatedBy?" promptNeeded="false" type="id_String" value="Talend" xmi:id="_zYNk99SFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="UpdatedOn" prompt="UpdatedOn?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:34" xmi:id="_zYNk-NSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" type="id_String" value="&quot;Open&quot;" xmi:id="_zYNk-dSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNk-tSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="StageId" prompt="StageId?" promptNeeded="false" type="id_String" value="FiletoHDFS" xmi:id="_zYNk-9SFEemCE4moRw_Dyg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_zYNk_NSFEemCE4moRw_Dyg">
+    <contextParameter comment="" name="BatchId" prompt="BatchId?" promptNeeded="false" type="id_String" value="3" xmi:id="_zYNk_dSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value="NewJob" xmi:id="_zYNk_tSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="StartDate" prompt="StartDate?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:09" xmi:id="_zYNk_9SFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="EndDate" prompt="EndDate?" promptNeeded="false" type="id_Date" value="2019-08-29 16:46:16" xmi:id="_zYNlANSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="CreatedBy" prompt="CreatedBy?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlAdSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="CreatedOn" prompt="CreatedOn?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:27" xmi:id="_zYNlAtSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="UpdatedBy" prompt="UpdatedBy?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlA9SFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="UpdatedOn" prompt="UpdatedOn?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:34" xmi:id="_zYNlBNSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlBdSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlBtSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="StageId" prompt="StageId?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlB9SFEemCE4moRw_Dyg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QC" xmi:id="_zYNlCNSFEemCE4moRw_Dyg">
+    <contextParameter comment="" name="BatchId" prompt="BatchId?" promptNeeded="false" type="id_String" value="3" xmi:id="_zYNlCdSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="JobName" prompt="JobName?" promptNeeded="false" type="id_String" value="NewJob" xmi:id="_zYNlCtSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="StartDate" prompt="StartDate?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:09" xmi:id="_zYNlC9SFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="EndDate" prompt="EndDate?" promptNeeded="false" type="id_Date" value="2019-08-29 16:46:16" xmi:id="_zYNlDNSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="CreatedBy" prompt="CreatedBy?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlDdSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="CreatedOn" prompt="CreatedOn?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:27" xmi:id="_zYNlDtSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="UpdatedBy" prompt="UpdatedBy?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlD9SFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="UpdatedOn" prompt="UpdatedOn?" promptNeeded="false" type="id_Date" value="2019-08-29 16:44:34" xmi:id="_zYNlENSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlEdSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlEtSFEemCE4moRw_Dyg"/>
+    <contextParameter comment="" name="StageId" prompt="StageId?" promptNeeded="false" type="id_String" value="" xmi:id="_zYNlE9SFEemCE4moRw_Dyg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d89cd739-1687-4f5d-88a9-a038c614f2b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>s79ids2sHnUfO3SRc6bhLutVoA6tlu6ptL6ktEhs1s5Wm6/QOCwv05NDkiTiqVvL2eg2yTrgCg6+
+Xm6RgHNcMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_95c20bd3-4308-41c4-8949-a4e79dd29352"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i+CbhSDeSOAl/FEJLHS4TnwCg7ZsmAClWj6ZOCtrCv0b3qi4CwbkfWg/oK/wbkH46dwqwyInn2BW
+Pa00mRVXTw==</DigestValue></Reference></SignedInfo><SignatureValue>gPA72jhsOEdtFnnn4Zz08+mc/1NpzOMOxr9qW0XTZ+wAlGSwBCO4DBN7A+tJ1yJ1hePT6OfcQ/05
+hHK6xBB3/AoG+QMHUT+Hn3XXidzvJiIRXkxCDtMnybIuctsI3OueQcXPiDVXeW93IltxfoAAhhUC
+W1Ge1fxTZQtEBW8pFWkpg7KsygYzey9VwbJnNHOk7Ia/nhU74O4HluxjyUC1qurLGedqhZA28pY4
+RmZiFxKSaFjRj5BRqpRA6mSbUYsvdLprGSw3KHUwVms15pOSjHWFgZVQybQlwT5W6LWCKdm4zCpM
+Zp9dl7x3Hk1N9u1HDtI7i54YGmgI5sWRXnZcZQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_95c20bd3-4308-41c4-8949-a4e79dd29352" Target="#_d89cd739-1687-4f5d-88a9-a038c614f2b8"><Timestamp>2019-09-11 11:17:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
