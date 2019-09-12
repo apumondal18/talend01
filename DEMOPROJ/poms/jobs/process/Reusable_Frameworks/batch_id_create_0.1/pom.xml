@@ -94,7 +94,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.demoproj.job</groupId>
-      <artifactId>ReadConfigProperties</artifactId>
+      <artifactId>LOAD_CONTEXT_DATA_VALUES</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
