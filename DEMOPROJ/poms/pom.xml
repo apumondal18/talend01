@@ -60,13 +60,14 @@
     <module>jobs/process/Reusable_Frameworks/batchstatusupdate_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_ais_stage1_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_ais_demo_ingestion_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/demo_ingestion_audit_user1_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
