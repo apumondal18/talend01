@@ -63,13 +63,14 @@
     <module>jobs/process/Reusable_Frameworks/demo_ingestion_audit_user1_0.1</module>
     <module>jobs/process/Reusable_Frameworks/batch_id_create_0.1</module>
     <module>jobs/process/Reusable_Frameworks/batch_id_status_update_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/load_context_data_values_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
