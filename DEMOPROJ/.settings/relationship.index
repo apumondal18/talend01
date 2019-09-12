@@ -2896,10 +2896,6 @@
     "version" : "Latest",
     "type" : "job"
   }, {
-    "id" : "_-5YycIEdEem1p9x_sWwddg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
