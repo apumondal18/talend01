@@ -65,7 +65,7 @@
     <module>jobs/process/Reusable_Frameworks/load_context_data_values_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_audit_framework_0.1</module>
     <module>jobs/process/Reusable_Frameworks/audit_framework_object_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/audit_framework_row_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/audit_framework_records_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
