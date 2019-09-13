@@ -199,7 +199,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.demoproj.job</groupId>
-      <artifactId>AUDIT_FRAMEWORK_RECORDS</artifactId>
+      <artifactId>AUDIT_FRAMEWORK_OBJECT</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
