@@ -5,10 +5,10 @@
     <contextParameter comment="" name="inputfilepath" prompt="inputfilepath?" promptNeeded="false" type="id_String" value="H:\TOS_BD-20181026_1147-V7.1.1\TOS_BD-20181026_1147-V7.1.1\workspace\abcd\"/>
     <contextParameter comment="" name="end_time" prompt="end_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="mysqldb.clbrn7mmudsd.us-east-1.rds.amazonaws.com"/>
-    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="users_demo"/>
-    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_Password" value="NccYU/cd6ZY="/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="db_audit"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_Password" value="CvVr+y4/knxwqOMQiZr1EQ=="/>
     <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="DBUserName" prompt="DBUserName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="user01"/>
+    <contextParameter comment="" name="DBUserName" prompt="DBUserName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="db_audit"/>
     <contextParameter comment="" name="path" prompt="path?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="PROD">
@@ -41,10 +41,10 @@
     <contextParameter comment="" name="inputfilepath" prompt="inputfilepath?" promptNeeded="false" type="id_String" value="E:\Shree\Wipro\Files\InputFiles"/>
     <contextParameter comment="" name="end_time" prompt="end_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="mysqldb.clbrn7mmudsd.us-east-1.rds.amazonaws.com"/>
-    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="users_demo"/>
-    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_Password" value="NccYU/cd6ZY="/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="db_audit"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_Password" value="CvVr+y4/knxwqOMQiZr1EQ=="/>
     <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="DBUserName" prompt="DBUserName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="user01"/>
+    <contextParameter comment="" name="DBUserName" prompt="DBUserName?" promptNeeded="false" repositoryContextId="_LVdjQMr5Eemwybc1jwb_Jg" type="id_String" value="db_audit"/>
     <contextParameter comment="" name="path" prompt="path?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
@@ -284,7 +284,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Numeric.sequence(&quot;s1&quot;,1,1).toString()+TalendDate.getDate(&quot;CCYYMMDDhhmmss&quot;) " name="var1" type="id_String"/>
       </varTables>
@@ -808,13 +808,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fdf9b33f-f532-4dc3-8b42-9549efb61a02"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2kxbQvWiYc/fyNVaju8F33+p3wQPgHsJ7T/hu2qvlt5S3qxWybI+d9NQQFIWMx/WKxX3a1FCBIod
-MwJsN40xKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6b4a6b58-9e7b-4efe-a869-f00d833fa68f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ldhJyZokNe+lc4cmF607sVlNYh8zC4+wgdueXe4Kf4Q5JF3dBhLsYkpLrckLWM9GZ8L5eD6+B2dl
-7qkTq9meGA==</DigestValue></Reference></SignedInfo><SignatureValue>hI+PZ6UJ4/OPbcSbxBt09XbEZYklM6+8j8v4AyBYd8u570eXgLIMKWXiLuCV3i7p6p7VW9LWmJqg
-cukhmS8MHw9lUIhgxKK6v4/7ft5BVlSHTZ0d6pxuiAPyC8/hwmuDfxIxgZcq0/iIIqjyDARz+1pU
-yzg6zD/vpEe/BWctivYCOmWIdroprvI5QeyWavuDy/4EZlsTJ/j7fidiPf6d2n4iHQJzzFTPC32V
-2mlR9oDWLEOekVPkB0LoVnXJ3IBry+RmoCc1Izq6p8GTVHzu7FMMnPwuI2dPAGciEFQLPeubCQt9
-mreOjE0P0XILRQsKYkGGcGQXw6YvjiNunHUPfw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6561e4ab-d19b-4f7f-8dce-58ba28c464c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TAX+eJ5RTg6yf5h6aQ+OQUrQgqaAVOnPww2gsgLNVjNIX4ny8HGDhUsh68ZAul+jcHZWfZAho1zD
+3IVJ+Qm4qg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c86efb14-3532-49f7-8435-da74369f1e91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>31BCV+j39x8wkrdcznXjJJhaZC4aUW3NB4bCPIEShYWzKscWINjqtJxDZWZ9/6ejuAnMvVg/IG/G
+vUhBhGx5Hg==</DigestValue></Reference></SignedInfo><SignatureValue>qdVvw0nV4ZmtIHZ2JcwayZMpjAUrb9dTB2RmeY7QDJynvS58iLSgLykcxIrvfJnJZ7u0pe6NvxRy
+K58BgJcQM84uZ90DTjCB2a92TNgNBqiHiJUIuK3y1Rr2uWvHiue8i1X3SnBZWv8hJhlIVJ9WJGr8
+wVVOntDonETNx0MEPVtoLRwU5TWREzphJNMyIGDTIR9aVEpbm62xciViAMM7DKHt0dDxkJY8OXPZ
+FDL01qxsGMP7mdgc652lBhnrqJH9pvLKzTyTNk2sKiF1l/qsf38BtSNPXto7OPL68tQbKPtgbSQh
+vc5X+stU1CnzKvddaCyGQ1PiPsssV++SrN0zBg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -838,4 +838,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6b4a6b58-9e7b-4efe-a869-f00d833fa68f" Target="#_fdf9b33f-f532-4dc3-8b42-9549efb61a02"><Timestamp>2019-09-13 09:33:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c86efb14-3532-49f7-8435-da74369f1e91" Target="#_6561e4ab-d19b-4f7f-8dce-58ba28c464c3"><Timestamp>2019-09-13 11:25:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
