@@ -55,7 +55,6 @@
     <module>jobs/process/Reusable_Frameworks/ais_file_developement_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_stage1_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_demo_ingestion_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/audit_framework_0.1</module>
     <module>jobs/process/Reusable_Frameworks/dummy_job_0.1</module>
     <module>jobs/process/Reusable_Frameworks/batchstatusupdate_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_ais_stage1_0.1</module>
@@ -66,6 +65,7 @@
     <module>jobs/process/Reusable_Frameworks/load_context_data_values_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_audit_framework_0.1</module>
     <module>jobs/process/Reusable_Frameworks/audit_framework_object_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/audit_framework_row_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
