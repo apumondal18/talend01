@@ -3406,10 +3406,6 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "HDP_3_1_2_1_1_dynamic_20190722115642458_0000",
-    "version" : "Latest",
-    "type" : "dynamicDistribution"
-  }, {
     "id" : "_G9RBwMo6EemYvJIivk5vaw",
     "version" : "Latest",
     "type" : "property"
