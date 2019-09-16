@@ -112,6 +112,7 @@
   </parameters>
   <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveConnection_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HIVE" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
     <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="HDP_2_6"/>
@@ -222,6 +223,7 @@
   </node>
   <node componentName="tHiveLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveLoad_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" show="false" value="EMR_5_15_0"/>
@@ -341,14 +343,216 @@
   </node>
   <node componentName="tHiveClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveClose_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
+  <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_2_6"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ip-172-31-22-71.ec2.internal:8020&quot;"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;hdfs&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" show="false" value="&quot;kms://http@localhost:16000/kms&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" show="false" value="&quot;adl://account.azuredatalakestore.net&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" show="false" value="&quot;XXXX&quot;"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" show="false" value="8OfJa/0kCvXQlSRASDVhqptGeKu96Q71+MFeMbXvWSXkfMuiC/54kkvhJ0nQoncPNuYSeD6u0ew="/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" show="false" value="8MpX1WKcNyg="/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_2"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_2_6"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ip-172-31-22-71.ec2.internal:8020&quot;"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;hdfs&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" show="false" value="&quot;kms://http@localhost:16000/kms&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" show="false" value="&quot;adl://account.azuredatalakestore.net&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" show="false" value="&quot;XXXX&quot;"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" show="false" value="8OfJa/0kCvXQlSRASDVhqptGeKu96Q71+MFeMbXvWSXkfMuiC/54kkvhJ0nQoncPNuYSeD6u0ew="/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" show="false" value="8MpX1WKcNyg="/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tHDFSInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHDFSConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="EMR_5_15_0"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" show="false" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" show="false" value="HDFS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" show="false" value="&quot;hdfs://localhost:9000/&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" show="false" value="&quot;adl://account.azuredatalakestore.net&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" show="false" value="&quot;XXXX&quot;"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" show="false" value="8OfJa/0kCvXQlSRASDVhqptGeKu96Q71+MFeMbXvWSXkfMuiC/54kkvhJ0nQoncPNuYSeD6u0ew="/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" show="false" value="8MpX1WKcNyg="/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/talendData/mas/raw/Books_1.csv&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" show="false" value="User_ID"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" show="false" value="User_ID"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#10;&#9;&#9;&#9;&#9;long, short, string are currently supported for key class and value&#10;&#9;&#9;&#9;&#9;columns fields&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" show="false" value="GZIP"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHDFSInput_1">
+      <column comment="" key="false" length="-1" name="User_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHDFSOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHDFSConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="EMR_5_15_0"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" show="false" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" show="false" value="HDFS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" show="false" value="&quot;hdfs://localhost:9000/&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" show="false" value="&quot;adl://account.azuredatalakestore.net&quot;"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" show="false" value="&quot;XXXX&quot;"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" show="false" value="8OfJa/0kCvXQlSRASDVhqptGeKu96Q71+MFeMbXvWSXkfMuiC/54kkvhJ0nQoncPNuYSeD6u0ew="/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" show="false" value="8MpX1WKcNyg="/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/apps/hive/warehouse/mas_demo_raw.db/audit_user1/&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="APPEND"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" show="false" value="User_ID"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" show="false" value="User_ID"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#10;&#9;&#9;&#9;&#9;long, short, string are currently supported for key class and value&#10;&#9;&#9;&#9;&#9;columns fields&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" show="false" value="GZIP"/>
+    <elementParameter field="LABEL" name="COMPRESS_NOTE" show="false" value="NOTE : Only support Linux client and hadoop native code is&#10;&#9;&#9;&#9;&#9;necessary, also need to add the native code path to&#10;&#9;&#9;&#9;&#9;$java.library.path&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHDFSOutput_1">
+      <column comment="" key="false" length="-1" name="User_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Age" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHiveConnection_1" target="tHiveLoad_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveLoad_1" offsetLabelX="0" offsetLabelY="0" source="tHiveLoad_1" target="tHiveClose_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSConnection_2" offsetLabelX="0" offsetLabelY="0" source="tHDFSConnection_2" target="tHDFSInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tHDFSInput_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSInput_1" target="tHDFSOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="User_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Age"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveConnection_1"/>
@@ -365,13 +569,28 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2e63d0e5-f864-498e-aeaf-dfb96fade48a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NwspO76AKqwMA7+2gQzKakgeo8dao9nl66YxEEFgYxhrMknnoyHGhrSPMRWX4gJLin6GWg3+rwvt
-e9XWzQFwMg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_29d496b6-e8dd-4c98-a657-802ce70bb2ba"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zFdA7CVR/6ICCstHGLhzFu49aL8hEjKWpyzqyyBLqHQRAfwl1V+Zmdzq1olg3JCkc0QPyM8HgTHH
-ddJMp94pGA==</DigestValue></Reference></SignedInfo><SignatureValue>ykMco+HkAPzFzmm4riz3JE43I3i91hZ6a8fWLrske5G2hPhTo0DyYDYkxiPofY3ZJX4Bckua6FZB
-uGAwV/V0pJtxYvUtdTI2+YtUS9sPLVdZ7YFFgEOSirEJ8tEE1Ed0mdrqJ7lMMYu6BqECyfmZT4pj
-oKAy40Pu1mACoUdcilLbEGCcgi4S9Ie7ZUFZ5xcg0lCuappMnP8ukBPLdKlE08XFZHTk7FxvSfES
-egO1yIUGmCa45RlapNiFfgb020dkUYaQ/e8BWdEGwG3de1lNhFP00X5giC7LDZYoWmrzhgCQFTG8
-Ou2KQHAm3dXriGkSfy8vwEZbwwGzAULqJAUT8w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4535c038-735f-4e6f-b15a-343771a36fd3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KuWfhg7XKSDTTwlWRyo073t+45G4CXg3Ld6MPmY71/WVnGdehEDQUfvxGtoPe6PtsDhluXTjv95q
+E2THfWDrcQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_92d3294b-1e32-487d-be4c-d19605c0dfcf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lsS7smMONMTrsFmAxn/lFG6mys8N2qmEWy9FD5MzJQFUqdC4uclTenAQjw5+96j6JbDwhfjVUuWY
+ANvjuRqCzw==</DigestValue></Reference></SignedInfo><SignatureValue>YEqCFAwXPQIURWeVp+I9WrQuWf184nLXSgT8DwmhwogSZ1hQnnjyyTkmOjsvyvphoMsE8epIx88B
+GJ9/YSajSjeksXL11a78OHrr1A5o9lI597HCLx2VamUs2HcMfh7SIjaZxOtd+grNm9OwreCPE+36
+k43ACINygOFRsRPsrC7Hf+I7tR9HeXANQG2qM6MuV7Ykfnk3YlUS7fRHUKnmkQvXSolXQ4JFh5XQ
+fmVdBVR1txlwZjO4Bj3htagTPeYMLiETwfwlx4sYEsPNSKTc3ChYIUvQhnA5vlVXuDsFRM7r613K
+cD7WsrPvgydq3/JzjPgFvmwZ17Td66SmwGcoHA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -395,4 +614,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_29d496b6-e8dd-4c98-a657-802ce70bb2ba" Target="#_2e63d0e5-f864-498e-aeaf-dfb96fade48a"><Timestamp>2019-09-16 06:25:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_92d3294b-1e32-487d-be4c-d19605c0dfcf" Target="#_4535c038-735f-4e6f-b15a-343771a36fd3"><Timestamp>2019-09-16 07:28:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
