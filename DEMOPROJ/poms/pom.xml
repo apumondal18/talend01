@@ -9,65 +9,59 @@
   <name>DEMOPROJ Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>code/routines</module>
-    <module>jobs/process_mr/AIS_Ingestion_Demo/step2_load_and_process_hive_0.1</module>
-    <module>jobs/process/AIS_Ingestion_Demo/step1_filesystem_hdfs_ingesion_0.1</module>
-    <module>jobs/process/hdfsconnection_0.1</module>
-    <module>jobs/process/hdfs_ingesion_file_0.1</module>
-    <module>jobs/process/MAS_HW_HDFS_Demo/hw_hdfs_file_ingesion_0.1</module>
-    <module>jobs/process/hive_connection_0.1</module>
-    <module>jobs/process/hdfsconnection_cluster2_7_0.1</module>
-    <module>jobs/process/MAS_HW_HDFS_Demo/load_to_hive_0.1</module>
-    <module>jobs/process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion/hw_hdfs_xml_ingesion_0.1</module>
-    <module>jobs/process/MAS_HW_HDFS_Demo/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_xml_ingesion_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_book_ratings_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book_ratings_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_db_user_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book1_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/job_load_hive_emp_0.1</module>
-    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_xml_ingesion_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_analytics_master_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book2_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_user1_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/testing_std_job_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/testing_hdfs_job_bg_practice_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/testing_hive_job_di_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_user2_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_stage_master_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/job_test_counts_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/testing_hdfs_job_di_0.1</module>
-    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_books_0.1</module>
-    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_ingesion_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/job_sample_transformation_0.1</module>
-    <module>jobs/process/MAS_POC_DEV/test_hive_conn_0.1</module>
-    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_ingestion_master_0.1</module>
-    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/copy_of_hw_hdfs_ingesion_0.1</module>
-    <module>jobs/process/job_test_0.1</module>
-    <module>jobs/process_mr/MAS_SPARK_JOBS_ANAYTICS/job_spark_hive_to_hive_users_0.1</module>
-    <module>jobs/process/demo/onboardingdemojob_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/db_connection_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/xls_file_iteration_0.1</module>
-    <module>jobs/process/AIS_DEMO_PROJECT/filesystem_hdfs_ingesion_0.1</module>
     <module>jobs/process/AIS_DEMO_PROJECT/MonitorJobs/new_connection_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/batchheadermonitor_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/readconfigproperties_0.1</module>
-    <module>jobs/process/monitor_0.1</module>
+    <module>jobs/process/AIS_DEMO_PROJECT/filesystem_hdfs_ingesion_0.1</module>
+    <module>jobs/process/AIS_Ingestion_Demo/step1_filesystem_hdfs_ingesion_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_db_user_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_analytics_master_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_book_ratings_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Analytics/job_load_hive_demo_books_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book1_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book2_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_book_ratings_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_stage_master_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_user1_0.1</module>
+    <module>jobs/process/MAS_DEMO_HIVE_Stage/job_load_hive_user2_0.1</module>
+    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/copy_of_hw_hdfs_ingesion_0.1</module>
+    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_ingestion_master_0.1</module>
+    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_xml_ingesion_0.1</module>
+    <module>jobs/process/MAS_DEMO_Ingestion_HDFS_Raw/hw_hdfs_ingesion_0.1</module>
+    <module>jobs/process/MAS_HW_HDFS_Demo/hw_hdfs_file_ingesion_0.1</module>
+    <module>jobs/process/MAS_HW_HDFS_Demo/load_to_hive_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_std_job_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/job_sample_transformation_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/job_load_hive_emp_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/job_test_counts_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/test_hive_conn_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_hdfs_job_bg_practice_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_hdfs_job_di_0.1</module>
+    <module>jobs/process/MAS_POC_DEV/testing_hive_job_di_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/batch_id_status_update_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_file_developement_0.1</module>
     <module>jobs/process/Reusable_Frameworks/ais_stage1_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/ais_demo_ingestion_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/dummy_job_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/batchstatusupdate_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/copy_of_ais_stage1_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/copy_of_ais_demo_ingestion_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/demo_ingestion_audit_user1_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/batch_id_create_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/batch_id_status_update_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/load_context_data_values_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/copy_of_audit_framework_0.1</module>
     <module>jobs/process/Reusable_Frameworks/audit_framework_object_0.1</module>
     <module>jobs/process/Reusable_Frameworks/audit_framework_records_0.1</module>
-    <module>jobs/process/Reusable_Frameworks/demo_curation_hive_user1_audit_records_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/batch_id_create_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/copy_of_ais_demo_ingestion_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/copy_of_ais_stage1_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/copy_of_audit_framework_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_demo_curation_hive_user1_audit_records_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/demo_curation_hive_user1_audit_records_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/demo_ingestion_audit_user1_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/load_context_data_values_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/xls_file_iteration_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/db_connection_0.1</module>
+    <module>jobs/process/Reusable_Frameworks/dummy_job_0.1</module>
+    <module>jobs/process/demo/onboardingdemojob_0.1</module>
+    <module>jobs/process/hdfs_ingesion_file_0.1</module>
+    <module>jobs/process/monitor_0.1</module>
+    <module>jobs/process/hdfsconnection_0.1</module>
+    <module>jobs/process/hdfsconnection_cluster2_7_0.1</module>
+    <module>jobs/process/hive_connection_0.1</module>
+    <module>jobs/process/job_test_0.1</module>
+    <module>jobs/process_mr/AIS_Ingestion_Demo/step2_load_and_process_hive_0.1</module>
+    <module>jobs/process_mr/MAS_SPARK_JOBS_ANAYTICS/job_spark_hive_to_hive_users_0.1</module>
+    <module>code/routines</module>
     <module>code/beans</module>
   </modules>
   <properties>
