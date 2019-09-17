@@ -68,6 +68,7 @@
     <module>jobs/process/Reusable_Frameworks/audit_framework_records_0.1</module>
     <module>jobs/process/Reusable_Frameworks/demo_curation_hive_user1_audit_records_0.1</module>
     <module>jobs/process/Reusable_Frameworks/copy_of_demo_curation_hive_user1_audit_records_0.1</module>
+    <module>code/beans</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
