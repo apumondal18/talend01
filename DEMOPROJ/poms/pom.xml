@@ -63,6 +63,9 @@
     <module>jobs/process_mr/MAS_SPARK_JOBS_ANAYTICS/job_spark_hive_to_hive_users_0.1</module>
     <module>code/routines</module>
     <module>code/beans</module>
+    <module>jobs/process/Reusable_Frameworks/copy_of_copy_of_audit_framework_0.1</module>
+    <module>jobs/process_mr/Audit_Reusable_Batch_Jobs/step2_load_and_process_hive_copy_0.1</module>
+    <module>jobs/process_mr/Audit_Reusable_Batch_Jobs/audit_framework_records_spark_job_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
