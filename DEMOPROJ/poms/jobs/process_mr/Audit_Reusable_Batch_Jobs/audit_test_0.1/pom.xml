@@ -89,6 +89,11 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>avro-1.8.0</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>avro-compiler-1.7.7</artifactId>
       <version>6.0.0</version>
     </dependency>
@@ -128,9 +133,19 @@
       <version>1.10</version>
     </dependency>
     <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.4</version>
+    </dependency>
+    <dependency>
       <groupId>commons-collections</groupId>
       <artifactId>commons-collections</artifactId>
       <version>3.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-collections4-4.0</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.janino</groupId>
@@ -178,6 +193,11 @@
       <version>3.4.1</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>commons-math3-3.1.1</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>commons-net</groupId>
       <artifactId>commons-net</artifactId>
       <version>3.1</version>
@@ -191,6 +211,21 @@
       <groupId>com.github.fommil.netlib</groupId>
       <artifactId>core</artifactId>
       <version>1.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.datanucleus</groupId>
+      <artifactId>datanucleus-api-jdo</artifactId>
+      <version>3.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.datanucleus</groupId>
+      <artifactId>datanucleus-core</artifactId>
+      <version>3.2.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.datanucleus</groupId>
+      <artifactId>datanucleus-rdbms</artifactId>
+      <version>3.2.9</version>
     </dependency>
     <dependency>
       <groupId>dom4j</groupId>
@@ -218,9 +253,24 @@
       <version>14.0.1</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>guava-11.0.2</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-annotations-2.7.3.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-auth-2.7.3.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -234,8 +284,23 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-common-2.7.3.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>hadoop-common-2.8.1</artifactId>
       <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-conf-kerberos</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-hdfs-2.7.3.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -251,6 +316,16 @@
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-mapreduce-client-common</artifactId>
       <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-mapreduce-client-common-2.7.3.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>hadoop-mapreduce-client-core-2.7.3.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -291,6 +366,11 @@
       <groupId>org.glassfish.hk2</groupId>
       <artifactId>hk2-utils</artifactId>
       <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.htrace</groupId>
+      <artifactId>htrace-core</artifactId>
+      <version>3.1.0-incubating</version>
     </dependency>
     <dependency>
       <groupId>org.apache.htrace</groupId>
@@ -413,6 +493,11 @@
       <version>2.22.2</version>
     </dependency>
     <dependency>
+      <groupId>com.sun.jersey</groupId>
+      <artifactId>jersey-core</artifactId>
+      <version>1.9</version>
+    </dependency>
+    <dependency>
       <groupId>org.glassfish.jersey.bundles.repackaged</groupId>
       <artifactId>jersey-guava</artifactId>
       <version>2.22.2</version>
@@ -431,6 +516,11 @@
       <groupId>net.java.dev.jets3t</groupId>
       <artifactId>jets3t</artifactId>
       <version>0.9.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jettison-1.3.4</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.mortbay.jetty</groupId>
@@ -486,6 +576,11 @@
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
       <version>1.3.9</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jsr305-2.0.3</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>net.sourceforge.jtransforms</groupId>
@@ -658,14 +753,29 @@
       <version>1.12</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>servlet-api-2.5</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.16</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>slf4j-api-1.7.10</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.16</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>slf4j-log4j12-1.7.10</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.xerial.snappy</groupId>
@@ -749,6 +859,11 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>talend-dataflow-spark2-lib-6.0.0-20160502</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>talend-mapred-lib</artifactId>
       <version>6.0.2.3</version>
     </dependency>
@@ -756,6 +871,41 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-api-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-common-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-dag-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-mapreduce-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-runtime-internals-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-runtime-library-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>tez-yarn-timeline-history-0.7.0.2.5.0.0-1245</artifactId>
+      <version>6.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.univocity</groupId>
