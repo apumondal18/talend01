@@ -159,11 +159,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-conf-kerberos</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>hadoop-hdfs-2.7.3.2.5.0.0-1245</artifactId>
       <version>6.3.0</version>
     </dependency>
