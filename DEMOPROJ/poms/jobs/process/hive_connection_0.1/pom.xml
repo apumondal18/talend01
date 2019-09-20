@@ -19,26 +19,26 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>demoproj</talend.project.name.lowercase>
-    <talend.job.path>demoproj/hive_connection_0_1</talend.job.path>
+    <talend.job.path>demoproj</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>DEMOPROJ</talend.project.name>
-    <talend.product.version>7.1.1.20181026_1147</talend.product.version>
+    <talend.product.version>7.1.1.20190906_1425-patch</talend.product.version>
     <talend.job.finalName>hive_connection_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.demoproj.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.demoproj.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>hive_connection</talend.job.name>
     <talend.job.id>_n6mQgK3VEem3o86kVoBNMQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <talend.job.framework></talend.job.framework>
     <talend.job.folder></talend.job.folder>
+    <talend.job.framework></talend.job.framework>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
@@ -2921,11 +2921,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.12</version>
-    </dependency>
-    <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty</artifactId>
       <version>3.10.5.Final</version>
@@ -3384,6 +3379,11 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
