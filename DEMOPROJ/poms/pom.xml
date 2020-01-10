@@ -68,7 +68,6 @@
     <module>jobs/process_mr/Audit_Reusable_Batch_Jobs/audit_framework_records_spark_job_0.1</module>
     <module>jobs/process_mr/Audit_Reusable_Batch_Jobs/audit_test_0.1</module>
     <module>jobs/process_mr/connection_0.1</module>
-    <module>jobs/process_mr/hive_to_hive_table_template_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
