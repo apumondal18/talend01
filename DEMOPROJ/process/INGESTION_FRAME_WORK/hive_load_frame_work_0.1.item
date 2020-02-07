@@ -126,7 +126,7 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;ip-172-31-24-132.ec2.internal&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="Hive"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;mas_demo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;mas_demo_raw&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;hive&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="SsYyuEyMCHg="/>
     <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;&quot;"/>
@@ -306,7 +306,7 @@
     <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" show="false" value="mr"/>
     <elementParameter field="CLOSED_LIST" name="TARGET" show="false" value="TABLE"/>
     <elementParameter field="TEXT" name="FILEPATH" value="&quot;/user/talendData/mas/frame_work/distributor_data.csv&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;distributor&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;distributor_data&quot;"/>
     <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported in Hive 0.10 or later.&#10;&#9;&#9;&#9;"/>
     <elementParameter field="CHECK" name="TARGET_TABLE_IS_A_PARQUET_TABLE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="PARQUET_COMPRESSION" show="false" value="UNCOMPRESSED"/>
@@ -367,13 +367,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cfc885fa-4c4e-4e43-acda-3c97879b1180"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7BlShdYa+lpVjmgVXOEZy/k/GdppOulSKkS+GOy2kbNM6TxlVjBMCwpEY3DVwrww30eqlKMYuvZJ
-u4TBysPIDg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e7c10503-77d9-4d4b-9428-35180ce72b0f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/v4XYio7IXEkZZiuaXOCLAI6+s6vnrrjMakXeT6BkuLhcYZjz5y58/A4PTnnf9zIk2QfP7gbCzjy
-4Ii/BqJogw==</DigestValue></Reference></SignedInfo><SignatureValue>mNswSNkOS6QwvFJ4cZZACMSfujG80/zMz3FkFnoEfqZ8dMzzOOlt1jKIx43Ez9Ulb2Ah7xyx+BUM
-kbMDdnaZ96BcsykIRq6MjLhdjMTon35A4cCL63keKbLfFhwhaHyjeqXPe65eTeOnRQIDSkxqETUl
-2M4kiWfNCitNXctHk+ZjncmmQdZKwsO+U7r8jsCX0fLoVdKzZX+4RmKwKFrjoE1hQO1mfKQwHb66
-TqAVg2BI4DIDYlmoqGbVq72+TqU1bMXXHGsfuSKpVNKNvoGR96ToBRrgn81dKut7eu4Y3jQOuPiQ
-GQVJ0Bmtta6rz6e6EbqV+gFgXsdehmVY1R8c8g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a4ed8200-1ffa-493b-b005-8fc8a546669c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TnFEEFFG6rQgQ2Poqo6W9I6ea+PSRw80rUKmJR35xYTNeZl9iSzNtN3N3rcAdizBrRuhAcyKV3WB
+bSTlSFFtIw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7a6ea227-e6bf-4819-8021-37a58ba59a74"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GW2U/c4ZcZKA/5K5J+NwAiCuEcZ+fRF9ZyqB7uL8kqNlmAi0pXA2gjLQTngm3NEb7Cy5x8qwMl2R
+hy8dO7BdRA==</DigestValue></Reference></SignedInfo><SignatureValue>mPELPP83+hmjJkukAfcV/2hC85fg3DsyIzRD4DFF4M9RDOmSTeRSnUSzNDLmhvWuFn46gKwKXE2O
+/LNYjPYayYVy0TEEoQS7oSh0nUPyiEJFSyjXhfcsQxC9M3+TsIjvOvFNVDlKq/tItAevAXPWRw8c
+3Q9Z3x/nJ1j0zS+a4UiXYYBot6UVbmuKh8HhKOc8MWpkfrXa26uUSCQh+OCoY1UeuaKDe4FPNCgs
+yj9sDJmgR9R5QCNoG3UiZF9WL12GEEiOZok2lI53cweAGsy1UQJ15Pg+lA26D8dm2DSrviluNhRB
+L7aMVfThNnXJBT5fy+He2L5zIjRx2jk3O3Qsmg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -397,4 +397,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e7c10503-77d9-4d4b-9428-35180ce72b0f" Target="#_cfc885fa-4c4e-4e43-acda-3c97879b1180"><Timestamp>2020-02-07 09:05:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7a6ea227-e6bf-4819-8021-37a58ba59a74" Target="#_a4ed8200-1ffa-493b-b005-8fc8a546669c"><Timestamp>2020-02-07 09:19:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
