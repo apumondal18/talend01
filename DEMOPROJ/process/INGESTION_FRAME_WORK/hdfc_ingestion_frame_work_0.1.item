@@ -147,7 +147,6 @@
   </node>
   <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/home/ttuser/mas/frame_work&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
@@ -345,7 +344,6 @@
   </node>
   <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/home/ttuser/mas/frame_work&quot;+((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Users/tmp-gkrishna/Documents/workspace&quot;"/>
@@ -362,7 +360,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//context.in_file = ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));&#10;&#10;System.out.println(&quot;**********HDFS File Ingestion Success: &quot; + ((String)globalMap.get(&quot;tFileExist_1_FILENAME&quot;)) );&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="display_status"/>
@@ -430,7 +427,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileCopy_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSConnection_2" offsetLabelX="0" offsetLabelY="0" source="tHDFSConnection_2" target="tHDFSPut_1">
@@ -440,14 +436,12 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCopy_2" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_2" target="tJava_2">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFileCopy_2">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
   </connection>
   <subjob>
@@ -505,13 +499,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_84210fe3-8aa1-4a67-af9c-8b9a03ace51b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>24bxJ0kBCOoJSCAcJ6kjXlcifq5rinyPjp4wJ3jVAV//yjEPFC5LjKOHliZvEuTolXcwSK+84hLX
-Oq4fltWlOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_954edb7e-8c9d-41a9-8e9c-759e256fd326"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KxMOtJD9449EIwikto4j3/puD/L9n4bI0sFXL+kJVU4cLE+aobKJzYZQK3ebQ9hXvNAcyMmSmWME
-+4lD6wGb9Q==</DigestValue></Reference></SignedInfo><SignatureValue>tYFbcaTKqJlGGV/ffgaSHjwRjzE2Ye2Ay7VZUX2RFS4Gf9P/AseSo6g4TPzUvJwPg0q9Hu7a2pGB
-u025AYTL2C0s/L+QaBQJmh4fbfv4Nhlhb+xvE4esBW7KWEeiG/4SfOxp7zS0zkQvfpVLQqBLEf/q
-A9YpceeP03NHrBKDk4GaWzGoFoz87jVgmUfjamtbOcrxnDHj+D5F2QQ5bKFSvVZQOfhrHrewkIvl
-SzbcuZw06tWaV6jGP3YCXemCdihG/qn+ZDEdqMOkrIN0emgKnb9ypuv8yBXhgQB7XKOTBcilrvMY
-e0QUKA661WvUO9V+S1N3/1xdYD2+KLr059c5WQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9164d23d-bf2f-46ce-b218-f2496d4bc5ee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nTTp1YSi4w3D6AE8pvjmI+niJbzUJcgW/DJLnbKce6UMfSJXlFwjYyiSVTRlSEfZUqBWKzgbJPgC
+KJkEW3fjJw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_83fed960-1962-40d2-854a-c3e8a6fa46df"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OZQS058X4GcRg2GB1eJ90LCDaJ/cchzSQqH0tL0HEAaoi+wm0sh7nfa3AyBIgNZGs7ymMzmbQCme
+d9rJh9DyrQ==</DigestValue></Reference></SignedInfo><SignatureValue>qLd20eiBIauCGia+JKs/pIBfJXMo7hFIRpSyoCbe7Kf82x86+JpaVYUxa0+NCRPjdY3RKRLpNsWL
+JoayWMvwgxuxQinsL7pCkQrn4e4sixbvP8lMwB17c26j/APfKWoiDhHrjdCQG0UVh7B1SuVzjjrJ
+HnalDPVGv0MjFdKeXNCoyzYZd9BP4fa41TOF8os65pIxhdQMVWQmkUK+mPN0W3oR5dmG7wPuKLOe
+ZBxOdGLg8W1FVYD/zMhQVlSRDqNkL4b/t9Pb7rmLt/ctLMt+SLtO419PpsIJAlZMUr04x0886LuJ
+I9Ps9Gtq2ykfSmSWjNePzvC6Ji6jBT1R5jCm3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -535,4 +529,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_954edb7e-8c9d-41a9-8e9c-759e256fd326" Target="#_84210fe3-8aa1-4a67-af9c-8b9a03ace51b"><Timestamp>2020-02-07 07:55:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_83fed960-1962-40d2-854a-c3e8a6fa46df" Target="#_9164d23d-bf2f-46ce-b218-f2496d4bc5ee"><Timestamp>2020-02-07 07:56:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
