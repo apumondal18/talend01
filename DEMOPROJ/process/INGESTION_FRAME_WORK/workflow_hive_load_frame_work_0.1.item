@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="context_path" prompt="context_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value="&quot;/home/ttuser/mas/frame_work/frame_work_context.txt&quot;"/>
+    <contextParameter comment="" name="control_table" prompt="control_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="distributor" prompt="distributor?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="hdfc_path" prompt="hdfc_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="serial_number" prompt="serial_number?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -108,13 +117,69 @@
     <routinesParameter id="_wVmeUKxeEem7OP0AO_zUaA" name="TalendStringUtil"/>
     <routinesParameter id="_wVctUKxeEem7OP0AO_zUaA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d440cc7e-4892-4505-b5fc-69ae40706c9d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FTTyZdGzZlPHEQ4ZeSkFJmewFMTw/DLb9XFS5qXIeU+wZk2FtefGBiF38fD0glCAadMFL1ZC7c1L
-2J7dTsVIrg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_63928206-a6b3-4d7c-91bb-b7a591100a54"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ArU8vzOJ7ZNjmJjjX+ZA1+iBJkvt2zlJ8kS80SnQMXzvCVFPwtsePTtjsWz/GVrNqpjlMhhi9/7e
-6Q9KBnj+zQ==</DigestValue></Reference></SignedInfo><SignatureValue>WZW3Tr/igVQ1mrODWAD2b0A/V8VY1Sj4a6eJZHpECdZrnVdoYC6VnC3Ph3wMGVZ4PVgGm/LvesaN
-e7+QfWDmaUHhFp8rQUZ0RWLSPeVqQuC/VPq3M79aCCoGP5czP+Uf4MUiLUz2HHIs+NcFX5/aFXTb
-BneRr/qZpnjWAxxycFl7RLAwoy8O8ZUVAj8RX/un+X30MxtSsG9ZSNjwT2aPQLVK7ui9GSstOCh6
-5vvkLuI+/7tpvQm7ZGDVAKHnPV71bx7dLWOMxOUJErHreclXRa9H3RO+6IRpSad/v/5hMaIvjSS5
-XXU0t6eu7uljSlewZ1Kem6CLnDUE2U4rL/Yi4Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="hive_load_frame_work"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_2k4oAEmDEeqwM8NzpEcXxw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="table_name"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.distributor"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Distributor"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="hive_load_frame_work"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_2k4oAEmDEeqwM8NzpEcXxw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="table_name"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.serial_number"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Serial_Number"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6f8dfe8f-9251-49bf-8ec9-9ba7849d3157"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hlZOcHsXfPMjQD+458YGitbrlBTsHk0Z7l84itbKwZ0umbFDztTmxK45EUTntSxEcb023rFnS+33
+yvG3G+R03A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f2971421-881a-4d40-8655-40850b52ee24"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3SlJ9IXHOWUCi5SHd/0hy1YocYgRyxKC9bAhT6jbd1SKECJ8g4EiAvzCCav5aYrdZx62vOWDv+zt
+iVuPRJSFDg==</DigestValue></Reference></SignedInfo><SignatureValue>JTxNdLoqEb2QgXPn2FcFblqXN7hDnyxwk5JAi6C8CerfBMMKSZS5S7t/7VYNg/56dMMe91tVRSAF
++zWUsiTZST9qwwitcTbaEl6/943iRJpwJ0JQTACwzOomzmA63PLjqhWqQ8oJl2O3jXl5z6kDjFBx
+WsOuIjwFTEirHaiVDirtYkmNO7UtIFS+DANoiHyIX/C+cV7nZKd2BIrK1VVchWSO5aBORzCyu1uM
+hEMto7UqyNxKUEoWt3tX4GxmOf5FWsVmRBc4KBarElLjVCl+1K4Gk3yV4Vva+nlYPm+psRgs5Bib
+4GPbxQ1vsCMmAS3qBKbLQjlRM/2kpXAnbL7QGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -138,4 +203,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_63928206-a6b3-4d7c-91bb-b7a591100a54" Target="#_d440cc7e-4892-4505-b5fc-69ae40706c9d"><Timestamp>2020-02-10 04:53:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f2971421-881a-4d40-8655-40850b52ee24" Target="#_6f8dfe8f-9251-49bf-8ec9-9ba7849d3157"><Timestamp>2020-02-10 05:07:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -68,9 +68,19 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.example.demoproj.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.demoproj.job</groupId>
+      <artifactId>hive_load_frame_work</artifactId>
+      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
