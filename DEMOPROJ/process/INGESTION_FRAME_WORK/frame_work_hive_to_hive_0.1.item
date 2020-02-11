@@ -5,6 +5,8 @@
     <contextParameter comment="" name="control_table" prompt="control_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="distributor" prompt="distributor?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="hdfc_path" prompt="hdfc_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="hdfs_name_node_URI" prompt="hdfs_name_node_URI?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="hdfs_user_name" prompt="hdfs_user_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="hive_data_base" prompt="hive_data_base?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="hive_host" prompt="hive_host?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="hive_password" prompt="hive_password?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
@@ -891,7 +893,7 @@
     <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
     <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
-    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ip-172-31-22-71.ec2.internal:8020&quot;"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="context.hdfs_name_node_URI"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
     <elementParameter field="CHECK" name="USE_KRB" value="false"/>
     <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
@@ -899,7 +901,7 @@
     <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
     <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
     <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;hdfs&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.hdfs_user_name"/>
     <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
@@ -1219,13 +1221,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad39821a-f6b1-4ae8-96d2-ef9d2807ebed"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wjaMf63EyBKqGAdRyq779JFAFgSoofjg5TFpjM6joQUkyYtNoGu4dqk2W79JX29ikYeiE0N3g4Up
-+qky0jSfGQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_85d191c9-3b59-41aa-a393-10fb45223c5b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8In3aK3MCikLBS1yOkcTB8X0+2+9ZNSrSXhm8MHOFQLn9VJvRqCy93Q70UiOKtoC5kPIWgoQgtH3
-wKIMb0Vz/g==</DigestValue></Reference></SignedInfo><SignatureValue>CAPzSq6QgJWXyqzzUljNKz5zpItqnVz3Q8hCwb2Qct35I/8dnTRinPRP6r6IeYSU6e/QqhdvOcNK
-bZhn1sKLGJNQ2szSuL5kjvdxi9nQ1jTESEOPh7FraVScQm9sYRKO0Lv8CiiuoXIJBFWLHkg37C1D
-iOQZHWoQ/5Yczk0eFA0uPvdVLay2mWvJHJzyj/talgw1hhRSHe4mKOrne6+uUoheSM/43ZQ8bbRA
-eRGzMxEoMJXbmuspVm1cfm3glrWrs35CHenVb5a2qq4iZZeMcwU7EICUjMwYY1Ra6z+kbF4jKgjB
-dMhVvzdsr7bivGFurpyrmeYGsjdxH0mqr4Th8Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_acda0545-fa48-4ade-a6fe-f56226e5a804"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QxZHaUO9rMDXgg1XbtYUITa4I3PwCb3cwe04TTUav2bLyD7y6NtdcP9n4s2bgcJLrh3VAyVpwJ2X
+SUxtnUYbZA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a5a1bff8-c59e-4bd3-9057-1f36377f0e90"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vi3oADRCZzVXZp+DaPnsSST/HrbqIKgt38JqFkct4aoSUG4NICntHtvIzGUueY9jQ1ZyOpfa+HZ+
+LGhIPypmpg==</DigestValue></Reference></SignedInfo><SignatureValue>HPZIWIwqpbyFSr8BBzXD/TY2E6g24b0T/Ixk/+QjWu16CA2v9rW5XFLfpAQMWurkwJ8byqbPopmM
+miu0qVogySrasEhZvAt4zRK0gtE/sa6D2VTvdRAWrYhR/uS+9FQbAe0SdoaKYyoUrns1me9hJqmu
+x9XaZR0oGUDfjAIXnUTnjFDxIlAJjihSL4i63N1/9qJNbpKvZXB1SYdA9+dUrXJy5wHBKsLLcvAl
+qlycXntLAANibm32NRb0yNOflPUjGKGJdBovw1bMh9yFEgC5h6B9aA5ZmtKGE+08WouZ0ejer66o
+Q2vkrqhpRDiEGpE0oDaA7PkIfExwRQxci6y17g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1249,4 +1251,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_85d191c9-3b59-41aa-a393-10fb45223c5b" Target="#_ad39821a-f6b1-4ae8-96d2-ef9d2807ebed"><Timestamp>2020-02-11 09:42:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a5a1bff8-c59e-4bd3-9057-1f36377f0e90" Target="#_acda0545-fa48-4ade-a6fe-f56226e5a804"><Timestamp>2020-02-11 09:47:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
