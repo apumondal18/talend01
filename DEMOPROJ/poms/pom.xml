@@ -73,6 +73,7 @@
     <module>jobs/process/INGESTION_FRAME_WORK/workflow_hive_load_frame_work_0.1</module>
     <module>jobs/process/INGESTION_FRAME_WORK/frame_work_hive_to_hive_0.1</module>
     <module>jobs/process/INGESTION_FRAME_WORK/hive_to_hive_frame_work_wf_0.1</module>
+    <module>jobs/process/INGESTION_FRAME_WORK/job_hive_load_0.1</module>
   </modules>
   <properties>
     <talend.project.name>DEMOPROJ</talend.project.name>
