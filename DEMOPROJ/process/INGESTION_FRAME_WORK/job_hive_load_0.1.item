@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="hql_path" prompt="hql_path?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="bussiness_domain_name" prompt="bussiness_domain_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="context_path" prompt="context_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value="&quot;/home/ttuser/mas/frame_work/frame_work_context.txt&quot;"/>
     <contextParameter comment="" name="control_table" prompt="control_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
@@ -13,6 +12,7 @@
     <contextParameter comment="" name="hive_password" prompt="hive_password?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="hive_port" prompt="hive_port?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="hive_user_name" prompt="hive_user_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="hql_path" prompt="hql_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="serial_number" prompt="serial_number?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="source_table" prompt="source_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
     <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
@@ -36,15 +36,15 @@
     <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
-    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
     <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
-    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
-    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="true"/>
-    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
-    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="context.context_path"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;=&quot;"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -61,12 +61,12 @@
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
-    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
-    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
-    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
@@ -360,7 +360,7 @@
   <node componentName="tHiveClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveClose_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="64">
@@ -476,7 +476,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;&#10;&#10;//context.hql_path = &quot;Example&quot;;&#10;&#10;System.out.println(&quot;Context In Sub Job&quot; + context.hql_path);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;&#10;&#10;context.hql_path = &quot;Example&quot;;&#10;&#10;System.out.println(&quot;Context In Sub Job&quot; + context.hql_path);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -529,13 +529,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0de9207e-3a68-441e-b2ca-838a4d6616c0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>srQve9uULzTvu2jWZ97DG+hXESsLRFmC4GjIXRwulXnuBvG4S5uTsUa/Ly56Ak0OytYCXtmxmspf
-ukIBHYdqDA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c1c3c0a7-b1ed-4717-8121-c5a83af1ed98"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VJowOqiflDlTmb3voYIuO24hZYqhdoQsHVhwnPkLtIEPPDUncJ9hBVenlonpwYq/3007DoSB5u2X
-bOnpWHvErw==</DigestValue></Reference></SignedInfo><SignatureValue>QC34NaFoALPGtpAPe/Z9DRtctF4mzHBXIMa6xhIDf+BK/SMgdjBVzYipwo1CQEe44B9uSeIVRmid
-cNiuleQX9Nml3RYnI7jQEAc3aw6jVneenyEhkK38r2/8MZsOukipVD/5elCUZthB5zOmP+RCCi0u
-QpwHbpoVTCJe0fQ/UoTarSairvxwGxSDIOaAssS5QWcxTd2U4QXRYMtj3qy82JTdnDxoLJJqf+qz
-AyzbBpxR5mGxEis7ubSQk6w0A2QEPHUvlXva+TDGcNfrtCFtxMXTz+xltgl4k/Ro7RqcZkain6vs
-oPjjr3nXZyGFao7XR4Q82m23Uuw39b1PcF04AA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9c205525-7976-4fdb-a40f-bf1e8963871e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V2gQ9LcPAe0WaeWZw/7Dw/bq4hgJq5+JzL6QEEg0p91NjHr5hoqqNzkvBBJHUJtLmEnouChgipdV
+9OULMj3G/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_283d1aef-37c4-4ea7-845e-e5447bf1440c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>113yWICHgygJmWPiUECdPsWPzlQCFRHQufYal2dSc3piXuS0UtgR8aWTG1tNTxSTcElZ6EXe4D0w
+6R8sAHiUig==</DigestValue></Reference></SignedInfo><SignatureValue>MgmfI6jqvanqLN6wB56rqSJfCKuNGk0H4T8kIptlofnf+zgFeHOHWiCrm1NrSO3vlaHuGj41MZyi
+WRxYEnbS4+vOAizASFavzkLrHwr+vI4l4dryWhtPPFzbAMpHrRWQc2W6LQesUFyXQtHefbRtgpDm
+cm7xmuT4EEQ43cI+LbEm3MOE6cbPhEsmx3sQ/NuG+4/Ax0H1mKsBcqazjNRvlS0N2X4sCwq6Nkbu
+R+FHcQqdYWB5Es9xK5GRwEvEd0a9425RyqRAGO6LCRuj25YBBD3RocJ+IvkWRmm+LB2ebbQR3Rpu
+2F12sR0cDR9lmQLblKOPvGlbK9XL/obEVmdQyg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -559,4 +559,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c1c3c0a7-b1ed-4717-8121-c5a83af1ed98" Target="#_0de9207e-3a68-441e-b2ca-838a4d6616c0"><Timestamp>2020-02-20 06:46:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_283d1aef-37c4-4ea7-845e-e5447bf1440c" Target="#_9c205525-7976-4fdb-a40f-bf1e8963871e"><Timestamp>2020-02-20 06:56:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
