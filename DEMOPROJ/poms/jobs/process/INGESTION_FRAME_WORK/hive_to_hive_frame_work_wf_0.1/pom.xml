@@ -312,6 +312,11 @@
       <artifactId>routines</artifactId>
       <version>7.1.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.example.demoproj.job</groupId>
+      <artifactId>job_hive_load</artifactId>
+      <version>0.1.0</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>
