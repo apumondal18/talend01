@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="bussiness_domain_name" prompt="bussiness_domain_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="context_path" prompt="context_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value="&quot;/home/ttuser/mas/frame_work/frame_work_context.txt&quot;"/>
-    <contextParameter comment="" name="control_table" prompt="control_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="distributor" prompt="distributor?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hdfc_path" prompt="hdfc_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hdfs_name_node_URI" prompt="hdfs_name_node_URI?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hdfs_user_name" prompt="hdfs_user_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hive_data_base" prompt="hive_data_base?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hive_host" prompt="hive_host?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hive_password" prompt="hive_password?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hive_port" prompt="hive_port?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hive_user_name" prompt="hive_user_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="hql_path" prompt="hql_path?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="serial_number" prompt="serial_number?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="source_table" prompt="source_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
-    <contextParameter comment="" name="target_table" prompt="target_table?" promptNeeded="false" repositoryContextId="_8BSO0Eu-EeqGHc8aNCoQ-Q" type="id_String" value=""/>
+    <contextParameter comment="" name="hql_path" prompt="hql_path?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="224"/>
@@ -529,13 +513,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1def1868-f099-4a90-972b-ebb5c3274069"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mDSfPIz+c0BvWAis1ChzLKx4yzoKEq/HkPt3509Cl2EceOjEbDrWkvZi22YzM8IJIRndKEzXI10U
-gvxfe+jvWg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_733e4fd7-4ca0-462d-8ce2-f706acb0d151"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jn86DXoO0ZinTuBa836Lw5Us1VyTjxd5n2MPNqYuY3E7EnWlrLy9VL7ZQ7zA6sfntNx+ampJWqa8
-ndXFFFmtMQ==</DigestValue></Reference></SignedInfo><SignatureValue>D8Jvx2hxT+NA+bHV8ie/ffWvYjDQvSUTFsX4RcZLK7H3EF+3ol/pA2hGIDOKxWAQ6aHD81Hyesig
-hsHZ71iVgYyxzkvwhktp9QEY776W4XD7Aqlio+WPK83BOoqy3iyDrN1y7ql4Lsst1F6RkLPc8YB3
-4cN/qveCV7wtEd2aAlH2kvPz1J08yk3zRgSSLKJ7HujUUc7R28/1kwoqMVg5DvxUTWmVsrQzhMVI
-CpPAtgF4/RlwAFtA/ylsoELNBrickNmVA2LKDTTTo1/CA6Z3hpRepZ3zPs/uDBmYrODLRK4G92Ki
-dtaPlNbyVCy7pqXXxEHrVTUFTe4CyQNO6UbtbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d8907e02-51a5-403d-8e10-805a9e27dc8b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uVorxIWA5EouXQCMZ1y0mCE+TuKbYMp/Fs6EXoy9gSBdbb5FPtc2Grwr5AdTpjkG4hh4DSOUSLpp
+3VfRUhDZMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_03d37e5e-dcc3-40e4-a037-4c0d6a36219b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y5Hmgy581ylETxatNShjkL9QAGKn7MrfJaJxitQMDpPi3imkKbHW9Fm0TZo1Y6uAVvpfFtlJ9/VS
+YqxnDeshhA==</DigestValue></Reference></SignedInfo><SignatureValue>oCTw8kXoUy2YgFKEX8pyLLS6DKQIvxEb21hSGXToWznaNrnyvh/bTRJ5xANQSPRGo68L+9rycb99
+IDE7skLRN23OoLXYxWGLq/IyMbRt/YA9ossK71sWRyhxsudy0nZ5F6NzoYVEadGDaAyxadKa/yOh
+WA+hye8VP7CZXVaVhbBiFr+7q232HNM0XVXVHVb4yqmmxLowKPthAiKvD658VS3zAsceGREl+vET
+HoWp/Xl7hR4utYHERyTYeUSRPlleGZgxZrP1eBn3c8sFdznTz2E2FY93K0jplvPfUofji/X6t7SM
+c9M7hyvkLvwiMDIzNiryNSoqMqXsFtSsNCX2yg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -559,4 +543,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_733e4fd7-4ca0-462d-8ce2-f706acb0d151" Target="#_1def1868-f099-4a90-972b-ebb5c3274069"><Timestamp>2020-02-20 06:16:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_03d37e5e-dcc3-40e4-a037-4c0d6a36219b" Target="#_d8907e02-51a5-403d-8e10-805a9e27dc8b"><Timestamp>2020-02-20 06:18:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
